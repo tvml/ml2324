@@ -614,7 +614,7 @@
             
               <li><a href="mailto:giorgio.gambosi@uniroma2.it?&subject=Corso%20Machine%20learning" target="_blank" class="icon-mail" title=""></a></li>
             
-              <li><a href="https://twitter.com/tvmlclass" target="_blank" class="icon-twitter" title=""></a></li>
+              <!--li><a href="https://twitter.com/tvmlclass" target="_blank" class="icon-twitter" title=""></a></li-->
             
             </ul>
           </section>
