@@ -493,9 +493,9 @@
                   </li>
               
                 
-                  <li >
+                  <!--li >
                     <font color="yellow">twitter.com/tvmlclass</font>
-                  </li>
+                  </li-->
               
               </ul>
           </div><!-- /.large-4.columns -->
