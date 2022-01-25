@@ -4,9 +4,9 @@
   url: "giorgio.gambosi@uniroma2.it"
   title: "Mail"
 
-- name: "Twitter"
-  url: "twitter.com/tvmlclass"
-  title: "Twitter"
+#- name: "Twitter"
+#  url: "twitter.com/tvmlclass"
+#  title: "Twitter"
 
 #- name: "Atom"
 #  url: "/atom.xml"
