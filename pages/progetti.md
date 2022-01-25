@@ -21,7 +21,7 @@ La dimensione dei gruppi è definita per ogni singolo progetto. In casi particol
 
  
 ### Progetti proposti
-
+<!--
 #### Progetti relativi al solo corso di Machine learning
 Per gruppi composti da 2 studenti
 
@@ -151,3 +151,4 @@ Versioni estese dei progetti 12-16
 
 - 3a estensione: oltre alla 2a estensione, implementazione del progetto su framework Big Data Hadoop/Spark. Attribuzione di 3-6 crediti D aggiuntivi, in funzione della complessità dell'implemetazione
 
+-->

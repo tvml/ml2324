@@ -8,7 +8,7 @@ header: no
 ---
 
 
-
+<!--
 1. [`mnist_keras.`{:.codelink}]({{ site.baseurl }}{%link codici/mnist_keras.ipynb %}) Riconoscimento caratteri (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/mnist_keras.ipynb)
 1. [`loss.`{:.codelink}]({{ site.baseurl }}{%link codici/loss.ipynb %}) Considerazioni su loss functions e loro ottimizzazione (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/loss.ipynb)
 1. [`overfitting.`{:.codelink}]({{ site.baseurl }}{%link codici/overfitting.ipynb %}) Illustrazione overfitting (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/overfitting.ipynb)
@@ -39,5 +39,5 @@ header: no
 1. [`PCA.`{:.codelink}]({{ site.baseurl }}{%link codici/pca.ipynb %}) Principal component analysis (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/pca.ipynb)
 1. [`PCA e compressione.`{:.codelink}]({{ site.baseurl }}{%link codici/PCA_austen.ipynb %}) Compressione mediante PCA (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/PCA_austen.ipynb)
 1. [`Eigenfaces.`{:.codelink}]({{ site.baseurl }}{%link codici/eigenfaces.ipynb %}) Riconoscimento di volti mediante PCA e SVM (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/eigenfaces.ipynb)
-
+-->
 

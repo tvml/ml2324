@@ -7,7 +7,7 @@ permalink: /lucidi/
 header: no
 ---
 
-
+<!--
 1. [`Introduzione al corso.`{:.filelink}]({{ site.baseurl }}{%link slides/introduction.pdf %}) Sommario degli obiettivi e dei contenuti del corso
 1. [`Probabilità e statistica.`{:.filelink}]({{ site.baseurl }}{%link slides/probstat.pdf %}) Richiami di probabilità e statistica
 1. [`Bayes.`{:.filelink}]({{ site.baseurl }}{%link slides/bayesian.pdf %}) Fondamenti di statistica bayesiana
@@ -26,4 +26,4 @@ header: no
 1. [`Ensemble.`{:.filelink}]({{ site.baseurl }}{%link slides/ensemble.pdf %}) Bagging e boosting
 1. [`Clustering.`{:.filelink}]({{ site.baseurl }}{%link slides/clustering.pdf %}) Clustering
 1. [`Mixtures.`{:.filelink}]({{ site.baseurl }}{%link slides/mixtures.pdf %}) Mixture models e applicazione al clustering
-
+-->
