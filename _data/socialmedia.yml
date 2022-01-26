@@ -3,13 +3,13 @@
   class: icon-mail
   title: ""
   
-- name: Twitter
-  url: https://twitter.com/tvmlclass
-  class: icon-twitter
-  title: ""
+#- name: Twitter
+#  url: https://twitter.com/tvmlclass
+#  class: icon-twitter
+#  title: ""
 
 #- name: GitHub
-#  url: http://github.com/tvml/ml1819
+#  url: http://github.com/tvml/ml2122
 #  class: icon-github
 #  title: ""
 
