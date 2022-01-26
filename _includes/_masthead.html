@@ -104,18 +104,19 @@
 <div id="masthead-with-background-color" style="background: {{ page.header.background-color }};">
 	<div class="row">
 			<div class="small-12 columns">
-			<div class="masthead-title"  style="padding:0px"><font color="white" size="6">
+			<div class="masthead-title"  style="padding:0px"><font color="#ECEFF4" size="6">
 				Machine learning
 				</font>
 				</div>
-				<div class="masthead-title" style="padding:0px"><font color="yellow" size="4">
+				<div class="masthead-title" style="padding:0px"><font color="#ECCC87" size="4">
 				CdLM in Informatica - Universita' di Roma Tor Vergata
 				</font>
 				</div>
-				<div class="masthead-title" style="padding:0px"><font color="orange" size="3">
+				<div class="masthead-title" style="padding:0px"><font color="8EBCBB" size="3">
 				Prof. Giorgio Gambosi - a.a. {{site.aa}}
 				</font>
 				</div>
+			<p/>
 			<p style="text-align:center;">
 				<!--a id="logo" href="{{ site.url }}" title="{{ site.title }} – {{ site.slogan }}"-->
 					<img src="{{ site.url }}{{ site.baseurl }}/assets/img/{{ page.header.image }}" alt="{{ site.title }} – {{ site.slogan }}">
@@ -147,14 +148,14 @@
 
 
 {% elsif page.header == false %}
-<div id="masthead-with-background-color" style="background: #3a5373; padding-left:0px;">
+<div id="masthead-with-background-color" style="background: #3B4253; padding-left:0px;">
 	<div class="row">
 		<div class="small-1 columns">
 			<img src="{{ site.url }}{{ site.baseurl }}/assets/img/{{site.side_image}}" itemprop="image">
 		</div>
 		<div class="small-11 columns">
 			<!--div class="masthead-title"  style="padding:0px"-->
-				<font color="white" size="6">
+				<font color="#ECEFF4" size="6">
 					{{page.title}}
 				</font>
 			<!--/div-->

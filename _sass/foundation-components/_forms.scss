@@ -211,7 +211,7 @@ $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%) !default;
     border-#{$opposite-direction}: none;
 
     // Control the font color based on background brightness
-    @if $bg-lightness > 70% or $bg == yellow { color: $input-prefix-font-color; }
+    @if $bg-lightness > 70% or $bg == #ECCC87 { color: $input-prefix-font-color; }
     @else { color: $input-prefix-font-color-alt; }
   }
 
@@ -243,7 +243,7 @@ $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%) !default;
     border-#{$default-float}: none;
 
     // Control the font color based on background brightness
-    @if $bg-lightness > 70%  or $bg == yellow { color: $input-prefix-font-color; }
+    @if $bg-lightness > 70%  or $bg == #ECCC87 { color: $input-prefix-font-color; }
     @else { color: $input-prefix-font-color-alt; }
   }
 
@@ -315,7 +315,7 @@ $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%) !default;
   // We can control the text color based on the brightness of the background.
   $bg-lightness: lightness($bg);
   background: $bg;
-  @if $bg-lightness < 70% or $bg == yellow { color: $input-error-message-font-color; }
+  @if $bg-lightness < 70% or $bg == #ECCC87 { color: $input-error-message-font-color; }
   @else { color: $input-error-message-font-color-alt; }
 }
 

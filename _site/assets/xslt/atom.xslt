@@ -9,8 +9,8 @@
 			<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Atom Feed (Styled)</title>
-	<link rel="stylesheet" type="text/css" href="http://localhost:4000/ml1819/assets/css/styles_feeling_responsive.css" />
-	<script src="http://localhost:4000/ml1819/assets/js/modernizr.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://localhost:4000/ml2122/assets/css/styles_feeling_responsive.css" />
+	<script src="http://localhost:4000/ml2122/assets/js/modernizr.min.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
   <script>
@@ -111,7 +111,7 @@
 	
 	<meta property="og:title" content="Atom Feed (Styled)" />
 	<meta property="og:description" content="Informazioni, comunicazioni e materiali relativi al corso di Machine learning, CdLM in Informatica, Università di Roma Tor Vergata." />
-	<meta property="og:url" content="http://localhost:4000/ml1819//assets/xslt/atom.xslt" />
+	<meta property="og:url" content="http://localhost:4000/ml2122//assets/xslt/atom.xslt" />
 	<meta property="og:site_name" content="Machine learning" />
 	
 
@@ -120,7 +120,7 @@
 	<!-- Search Engine Optimization -->
 	
 
-	<link type="text/plain" rel="author" href="http://localhost:4000/ml1819/humans.txt" />
+	<link type="text/plain" rel="author" href="http://localhost:4000/ml2122/humans.txt" />
 
 	
 
@@ -131,11 +131,11 @@
 	<body id="top-of-page">
 		<xsl:text disable-output-escaping="yes"><![CDATA[
 		
-<div id="navigation" class="sticky">
+<div id="navigation" class="sticky" >
   <nav class="top-bar" role="navigation" data-topbar>
     <ul class="title-area">
       <li class="name">
-      <h1 class="show-for-small-only"><a href="http://localhost:4000/ml1819" class="icon-tree"> Machine learning</a></h1>
+      <h1 class="show-for-small-only"><a href="http://localhost:4000/ml2122" class="icon-tree"> Machine learning</a></h1>
     </li>
        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span>Navigation</span></a></li>
@@ -223,7 +223,7 @@
 
             
             
-              <li><a href="http://localhost:4000/ml1819/">Start</a></li>
+              <li><a href="http://localhost:4000/ml2122/">Start</a></li>
               <li class="divider"></li>
 
             
@@ -238,7 +238,7 @@
 
             
             
-              <li><a href="http://localhost:4000/ml1819/info/">Informazioni</a></li>
+              <li><a href="http://localhost:4000/ml2122/info/">Informazioni</a></li>
               <li class="divider"></li>
 
             
@@ -253,7 +253,7 @@
 
             
             
-              <li><a href="http://localhost:4000/ml1819/programma/">programma</a></li>
+              <li><a href="http://localhost:4000/ml2122/programma/">programma</a></li>
               <li class="divider"></li>
 
             
@@ -268,7 +268,7 @@
 
             
             
-              <li><a href="http://localhost:4000/ml1819/lucidi/">lucidi</a></li>
+              <li><a href="http://localhost:4000/ml2122/lucidi/">lucidi</a></li>
               <li class="divider"></li>
 
             
@@ -283,7 +283,7 @@
 
             
             
-              <li><a href="http://localhost:4000/ml1819/codici/">codici</a></li>
+              <li><a href="http://localhost:4000/ml2122/codici/">codici</a></li>
               <li class="divider"></li>
 
             
@@ -298,7 +298,7 @@
 
             
             
-              <li><a href="http://localhost:4000/ml1819/dataset/">dataset</a></li>
+              <li><a href="http://localhost:4000/ml2122/dataset/">dataset</a></li>
               <li class="divider"></li>
 
             
@@ -313,7 +313,7 @@
 
             
             
-              <li><a href="http://localhost:4000/ml1819/comunicazioni/">Comunicazioni</a></li>
+              <li><a href="http://localhost:4000/ml2122/comunicazioni/">Comunicazioni</a></li>
               <li class="divider"></li>
 
             
@@ -328,7 +328,7 @@
 
             
             
-              <li><a href="http://localhost:4000/ml1819/lezioni/">Lezioni</a></li>
+              <li><a href="http://localhost:4000/ml2122/lezioni/">Lezioni</a></li>
               <li class="divider"></li>
 
             
@@ -343,7 +343,7 @@
 
             
             
-              <li><a href="http://localhost:4000/ml1819/progetti/">Progetti</a></li>
+              <li><a href="http://localhost:4000/ml2122/progetti/">Progetti</a></li>
               <li class="divider"></li>
 
             
@@ -358,7 +358,7 @@
 
             
             
-              <li><a href="http://localhost:4000/ml1819/store/">Store</a></li>
+              <li><a href="http://localhost:4000/ml2122/store/">Store</a></li>
               <li class="divider"></li>
 
             
@@ -373,7 +373,7 @@
 
             
             
-              <li><a href="http://localhost:4000/ml1819/biblio/">Bibliografia</a></li>
+              <li><a href="http://localhost:4000/ml2122/biblio/">Bibliografia</a></li>
               <li class="divider"></li>
 
             
@@ -393,7 +393,7 @@
 			<div class="small-12 columns">
 				<a id="logo" href="http://localhost:4000" title="Machine learning – Università di Roma Tor Vergata">
 				<p style="text-align:center;">
-					<img src="http://localhost:4000/ml1819/assets/img/" alt="Machine learning – Università di Roma Tor Vergata">
+					<img src="http://localhost:4000/ml2122/assets/img/" alt="Machine learning – Università di Roma Tor Vergata">
 				</p>
 				</a>
 			</div><!-- /.small-12.columns -->
@@ -478,21 +478,17 @@
               
             
               
-            
-              
               <ul class="no-bullet shadow-black">
               
                 
                   <li >
-                    <font color="yellow"></font>
+                    <font color="#ECCC87"></font>
                   </li>
               
                 
                   <li >
-                    <font color="yellow">giorgio.gambosi@uniroma2.it</font>
+                    <font color="#ECCC87">giorgio.gambosi@uniroma2.it</font>
                   </li>
-              
-               
               
               </ul>
           </div><!-- /.large-4.columns -->
@@ -519,7 +515,7 @@
             
               
                 <li >
-                  <a href="/ml1819"  title=""></a>
+                  <a href="/ml2122"  title=""></a>
                 </li>
             
               
@@ -600,8 +596,7 @@
         <nav class="row">
           <section id="subfooter-left" class="b30 small-12 medium-6 columns credits">
             <p>
-              Leave some &hearts;
-              for&nbsp;
+              Theme created by&nbsp;
               <a href="http://phlow.de" alt="Theme created by Phlow">Phlow</a>
             </p>
           </section>
@@ -610,7 +605,6 @@
             <ul class="inline-list">
             
               <li><a href="mailto:giorgio.gambosi@uniroma2.it?&subject=Corso%20Machine%20learning" target="_blank" class="icon-mail" title=""></a></li>
-            
             
             </ul>
           </section>
@@ -621,7 +615,7 @@
 		
 
 
-<script src="http://localhost:4000/ml1819/assets/js/javascript.min.js"></script>
+<script src="http://localhost:4000/ml2122/assets/js/javascript.min.js"></script>
 
 
 

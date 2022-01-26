@@ -24,7 +24,7 @@
               {% for service_item in site.data.services %}
                 {% if service_item.url contains 'http' %}{% assign domain = '' %}{% elsif service_item.url contains 'mailto'%}{% assign domain = '' %}{% else %}{% assign domain = site.baseurl %}{% endif %}
                   <li {% if service_item.class %}class="{{ service_item.class }}" {% endif %}>
-                    <font color="yellow">{{ service_item.url }}</font>
+                    <font color="#ECCC87">{{ service_item.url }}</font>
                   </li>
               {% endfor %}
               </ul>
@@ -98,8 +98,7 @@
         <nav class="row">
           <section id="subfooter-left" class="b30 small-12 medium-6 columns credits">
             <p>
-              Theme created by 
-              for&nbsp;
+              Theme created by&nbsp;
               <a href="http://phlow.de" alt="Theme created by Phlow">Phlow</a>
             </p>
           </section>

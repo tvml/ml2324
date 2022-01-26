@@ -8,7 +8,7 @@ layout: frontpage
     
 header:
     image: "img4.png"
-    background-color: "#3a5373"
+    background-color: "#3B4253"
     caption: This is a caption for the header image with link
     caption_url: https://unsplash.com/
 
