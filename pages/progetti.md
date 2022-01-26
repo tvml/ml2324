@@ -14,14 +14,13 @@ header: no
 Tutti i progetti prevedono la scrittura, utilizzando il linguaggio Python, di:
 
 * un programma che richiami e integri tra loro funzionalità di Machine Learning
-offerte dalle librerie software adottate, il programma potrà essere uno script Python o un notebook Jupyter
-* una relazione esaustiva che illustri le caratteristiche del problema affrontato e le soluzioni adottate, con una discussione dei risultati ottenuti; nel caso in cui il codice venga fornito come notebook, la relazione può essere integrata all'interno del notebook stesso.
+offerte dalle librerie software adottate, il programma sarà scritto come notebook Jupyter
+* una relazione esaustiva che illustri le caratteristiche del problema affrontato e le soluzioni adottate, con una discussione dei risultati ottenuti; la relazione può essere integrata all'interno del notebook stesso.
 
-La dimensione dei gruppi è definita per ogni singolo progetto. In casi particolari è possibile prevedere, se motivata, la possibilità di dimensioni diverse da quanto specificato.
+<!-- La dimensione dei gruppi è definita per ogni singolo progetto. In casi particolari è possibile prevedere, se motivata, la possibilità di dimensioni diverse da quanto specificato.
 
  
 ### Progetti proposti
-<!--
 #### Progetti relativi al solo corso di Machine learning
 Per gruppi composti da 2 studenti
 

@@ -20,7 +20,7 @@ Introduzioni a Python e ai temi del ML liberamente disponibili su Internet
 ### Testi di Machine Learning liberi
 Testi di Machine Learning liberamente disponibili su Internet 
 
-* D. Barber. [Bayesian Reasoning and Machine Learning]([http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.HomePage)
+* D. Barber. [Bayesian Reasoning and Machine Learning](http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.HomePage)
 
 * D. MacKay. [Information Theory, Inference, and Learning Algorithms](http://www.inference.org.uk/itprnn/book.html)
 
@@ -28,17 +28,26 @@ Testi di Machine Learning liberamente disponibili su Internet
 
 * I. Goodfellow, Y. Bengio, A. Courville. [Deep Learning](http://www.deeplearningbook.org/)
 
+* K.P. Murphy [Machine Learning: a Probabilistic Perspective](https://probml.github.io/pml-book/book0.html)
+
+* K.P. Murphy [Probabilistic Machine Learning: aa Introduction](https://probml.github.io/pml-book/book1.html)
 
 ### Documentazione tecnica
 Manuali per l'utilizzo di strumenti e librerie software
 
-* Documentazione distribuzione [Anaconda](https://conda.io/docs/user-guide/index.html)
-* Documentazione editor IDE [Spyder](https://pythonhosted.org/spyder/)
+* Documentazione distribuzione [Conda](https://docs.conda.io/en/latest/)
+* Documentazione package manager [Anaconda](https://docs.anaconda.com)
+* Documentazione editor IDE [Spyder](https://docs.spyder-ide.org/current/index.html)
 * Documentazione ambiente [Jupyter/IPython Notebook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/)
-* Doumentazione ambiente [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/)
+* Documentazione ambiente [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/)
+* Documentazione ambiente [Google Colab](https://colab.research.google.com/notebooks/welcome.ipynb?hl=it)
+* Documentazione editor IDE [Atom](https://atom.io)
+* Documentazione editor IDE [Visual Studio Code](https://code.visualstudio.com)
 * Documentazione dei package [Scipy e Numpy](https://docs.scipy.org/doc/)
 * Documentazione package [Matplotlib](https://matplotlib.org/users/index.html)
 * Documentazione package [Pandas](https://pandas.pydata.org)
+* Documentazione package [Scikit-learn](https://scikit-learn.org/stable/)
+* Documentazione package [PyTorch](https://pytorch.org)
 * Documentazione package [Pymc3](https://docs.pymc.io)
 * [`Cheat sheet`{:.filelink}]({{ site.baseurl }}{%link varie/python_cheat_sheet.pdf %}) riassuntivi Python 
 
