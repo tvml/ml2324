@@ -11,10 +11,13 @@ header: no
 
 Le lezioni del corso si svolgono:
 
-* 
-* 
+* Martedì h. 11.30-13.15
+* Giovedì h. 14-15.45
+* Venerdì h. 14-15.45
 
-Le lezioni avranno inizio 
+aula da definire
+
+Le lezioni avranno inizio martedì 9 Marzo 2022
 
 
 #### Ricevimento
@@ -41,7 +44,7 @@ docente, la valutazione e la comparazione della loro efficacia e la scrittura di
 una relazione. A meno di eccezioni concordate con il docente, si richiede che il
 progetto sia realizzato per coppie di studenti.
 
-La prova di esame consiste nella illustrazione del lavoro fatto, facendo
+La prova di esame consiste nella illustrazione del lavoro svolto, facendo
 riferimento alla relazione scritta. E' inoltre previsto un colloquio orale, per
 ogni singolo studente, incentrato sui contenuti del corso.
 
