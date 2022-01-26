@@ -30,7 +30,7 @@ Testi di Machine Learning liberamente disponibili su Internet
 
 * K.P. Murphy [Machine Learning: a Probabilistic Perspective](https://probml.github.io/pml-book/book0.html)
 
-* K.P. Murphy [Probabilistic Machine Learning: aa Introduction](https://probml.github.io/pml-book/book1.html)
+* K.P. Murphy [Probabilistic Machine Learning: an Introduction](https://probml.github.io/pml-book/book1.html)
 
 ### Documentazione tecnica
 Manuali per l'utilizzo di strumenti e librerie software
