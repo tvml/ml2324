@@ -17,7 +17,9 @@ Le lezioni del corso si svolgono:
 
 aula da definire
 
-Le lezioni avranno inizio martedì 9 Marzo 2022
+Le lezioni avranno inizio martedì 9 Marzo 2022.
+
+Il team Teams associato al corso, all'interno del quale sarà possibile tra l'altro assistere alle lezioni da remoto, è accessibile a questo [indirizzo](https://teams.microsoft.com/l/team/19%3aSnXo8tfbIIOZjyAdDchfuhhMTIkKrWRWKjjGkLZ4l5Y1%40thread.tacv2/conversations?groupId=defe5dda-ef9f-45d4-bae2-22306222e6a1&tenantId=24c5be2a-d764-40c5-9975-82d08ae47d0e)
 
 
 #### Ricevimento
@@ -60,7 +62,7 @@ offerte da librerie software ampiamente utilizzate nel settore.
 Il testo di riferimento principale è il seguente:
 `M. Bishop "Pattern Recognition and Machine Learning", Springer 2006`{:.alert}
 
-Saranno inoltre suggeriti altri testi sull'argomento liberamente disponibili in
+Nella sezione Bibliografia sono inoltre suggeriti altri testi sull'argomento liberamente disponibili in
 formato pdf sul web.
 
 Infine, sarà reso disponibile il materiale didattico preparato dal docente,
