@@ -15,7 +15,7 @@ Le lezioni del corso si svolgono:
 * Giovedì h. 14-15.45
 * Venerdì h. 14-15.45
 
-aula da definire
+aula T5, edificio Sogene
 
 Le lezioni avranno inizio martedì 9 Marzo 2022.
 
