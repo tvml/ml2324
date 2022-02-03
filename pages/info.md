@@ -11,7 +11,7 @@ header: no
 
 Le lezioni del corso si svolgono:
 
-* Martedì h. 11.30-13.15
+* Martedì h. 12-13.45
 * Giovedì h. 14-15.45
 * Venerdì h. 14-15.45
 
