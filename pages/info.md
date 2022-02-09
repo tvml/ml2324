@@ -9,13 +9,11 @@ header: no
 
 ### Dove e quando
 
-Le lezioni del corso si svolgono:
+Le lezioni del corso si svolgono presso la macroarea di Scienze, edificio Sogene:
 
-* Martedì h. 12-13.45
-* Giovedì h. 14-15.45
-* Venerdì h. 14-15.45
-
-aula T5, edificio Sogene
+* Martedì h. 12-13.45 aula 16
+* Giovedì h. 14-15.45 aula T5
+* Venerdì h. 14-15.45 aula T5
 
 Le lezioni avranno inizio martedì 8 Marzo 2022.
 
