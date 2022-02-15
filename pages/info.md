@@ -15,7 +15,7 @@ Le lezioni del corso si svolgono presso la macroarea di Scienze, edificio Sogene
 * Giovedì h. 14-15.45 aula T5
 * Venerdì h. 14-15.45 aula T5
 
-Le lezioni avranno inizio martedì 8 Marzo 2022.
+Le lezioni avranno inizio giovedì 10 Marzo 2022.
 
 Il team Teams associato al corso, all'interno del quale sarà possibile tra l'altro assistere alle lezioni da remoto, è accessibile a questo [indirizzo](https://teams.microsoft.com/l/team/19%3aSnXo8tfbIIOZjyAdDchfuhhMTIkKrWRWKjjGkLZ4l5Y1%40thread.tacv2/conversations?groupId=defe5dda-ef9f-45d4-bae2-22306222e6a1&tenantId=24c5be2a-d764-40c5-9975-82d08ae47d0e)
 
