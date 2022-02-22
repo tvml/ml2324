@@ -7,9 +7,10 @@ permalink: /lucidi/
 header: no
 ---
 
+
+1. [`Fondamenti.`{:.filelink}]({{ site.baseurl }}{%link slides/1-foundations-slides.pdf %}) Concetti fondamentali del machine learning
+1. [`Probabilità e apprendimento.`{:.filelink}]({{ site.baseurl }}{%link slides/2-probabilistic-learning.pdf %}) Approcci probbilistici all'apprendimento
 <!--
-1. [`Introduzione al corso.`{:.filelink}]({{ site.baseurl }}{%link slides/introduction.pdf %}) Sommario degli obiettivi e dei contenuti del corso
-1. [`Probabilità e statistica.`{:.filelink}]({{ site.baseurl }}{%link slides/probstat.pdf %}) Richiami di probabilità e statistica
 1. [`Bayes.`{:.filelink}]({{ site.baseurl }}{%link slides/bayesian.pdf %}) Fondamenti di statistica bayesiana
 1. [`Inferenza.`{:.filelink}]({{ site.baseurl }}{%link slides/model_inference.pdf %}) Inferenza probabilistica
 1. [`Regressione.`{:.filelink}]({{ site.baseurl }}{%link slides/regression.pdf %}) Regressione lineare

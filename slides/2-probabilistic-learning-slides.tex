@@ -1,0 +1,201 @@
+\documentclass[9pt, aspectratio=169, sectionpages, handout]{beamer}
+%\documentclass{beamer}
+\usetheme[mode=light]{sthlmnord}
+\usepackage{irbookslide2}
+\usepackage{url}
+\usepackage{newalg}
+\usepackage{pstricks,pst-node,pst-plot,pst-tree}
+\usepackage{graphicx}
+ \usepackage{color}
+ \usepackage[]{amsmath}
+%\usepackage[landscape]{epsfig}
+\usepackage{xkcdcols}
+
+\usepackage[italian]{babel}
+\selectlanguage{italian}
+%%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.14}
+\usepackage{cancel}
+\usepackage{math}
+\usepackage{commands}
+\usepackage{adg}
+\usepackage{tikz}
+\usetikzlibrary{arrows,decorations.pathmorphing,positioning,backgrounds,fit}
+\usetikzlibrary{automata}
+\usetikzlibrary{arrows,decorations.pathmorphing,positioning,backgrounds,fit}
+\usetikzlibrary{arrows,decorations.pathmorphing,positioning,backgrounds,fit}
+\usetikzlibrary{decorations,positioning,backgrounds,fit,shadows,automata,backgrounds,patterns,snakes}
+\usetikzlibrary{calc,intersections,through,shapes,scopes,chains,matrix,shapes.arrows}
+%
+%\definecolor{pale}{RGB}{245,245,200}
+
+\definecolor{pale}{RGB}{145,145,145}
+\definecolor{node}{RGB}{220,220,220}
+%\definecolor{observed}{RGB}{145,145,145}
+\definecolor{observed}{RGB}{240,140,140}
+\definecolor{box}{RGB}{240,240,240}
+%\definecolor{param}{RGB}{176,200,233}
+\definecolor{param}{RGB}{255,255,221}
+
+\definecolor{ft}{RGB}{210,40,40}
+\definecolor{bt}{RGB}{54,94,155}
+\definecolor{nt}{RGB}{90,90,90}
+\definecolor{mt}{RGB}{168,27,49}
+\definecolor{at}{RGB}{170,80,80}
+%
+\usepackage{colortbl}
+\usepackage{environ}
+
+
+%%%%%%%%%%%%%%%%%%%%
+\newenvironment<>{definizione}[1]{%
+ \begin{block}{#1}}{\end{block}}
+ 
+\NewEnviron{specialframe}[1]{%
+\begingroup
+\setbeamercolor{background canvas}{bg=\cnBlue}
+\begin{frame}{#1}
+\cGrey{\BODY}
+  \end{frame}
+\endgroup
+}
+
+% > > > CTAN Packages
+%		the subfiles package is being used to compile individual slides
+%		using the main tex file.  Individual slides can then be included
+%		into multiple slide decks.
+\usepackage{subfiles}
+
+% > > > Custom Packages
+\usepackage{mhomath}
+
+% > > > Generate some Lorem Ipsum placeholder text.
+\usepackage{lipsum}
+\usepackage{commands}
+% > > >	Image File Paths
+% 		Here you can add one or more paths to where your images are being
+%		stored.  This will allow you to include only the image file 
+%		name when placing it into your document.
+%\graphicspath{{path1},{path2},{path3}}
+\graphicspath{{./assets/}} 
+
+\newcommand{\snord}{\cnordTen{sthlm}\cnordEight{NORD}}
+
+% > > > Document Information
+\subtitle{Probabilistic learning}
+\title{Machine learning}
+\newcommand{\course}{Corso di Laurea Magistrale in Informatica}
+\newcommand{\filename}{a.a. 2021-2022}
+\author{Prof. Giorgio Gambosi}
+\institute{Università di Roma Tor Vergata}
+\newcommand{\othertext}{}
+%\titlegraphic{nordtitlelogodark}
+\titlegraphic{logo}
+
+% > > > pdf customizations via hyperref (pkg installed by beamer)
+\hypersetup{
+colorlinks=true,
+% You might want to disable color links for you final draft.
+%colorlinks=false,
+linkcolor={nordNine},
+citecolor={nordNine},
+urlcolor={nordNine}
+}
+
+\newcommand {\Prob} {\textrm {P}}
+\newcommand {\Query} {\textrm {q}}
+\newcommand {\Term} {\textrm {w}}
+\renewcommand {\P} {\textrm {P}}
+ \newcommand {\Inf} {{\textrm{ Inf}}}
+ \newcommand {\walk} {\textrm {walk}}
+ \newcommand{\probability}{\textrm {probability}}
+ \newcommand{\relevance}{{\textrm{ relevance}}}
+ \newcommand{\documents}{{\textrm{ document}}}
+\newcommand {\weight} {{\textrm{ weight}}}
+ \newcommand{\random}{\textrm {random process}}
+%%%%%%%%%%% %%%%%%%%%%%%%%%%
+%%				 						%
+%%   Random variable definitions in formulas  		%
+%%										%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \newcommand{\stress}[1]{ {{\bf #1}} }
+%\newcommand{\stress}[1]{ {\textrm{\em #1}}}
+  
+ \newcommand {\doc} {\stress {d}}
+ \newcommand {\Vocabulary} {\stress {V}}
+\newcommand{\CollSize}{\stress {N}}
+% \newcommand{\Freq}{\stress tf}
+  \newcommand{\Div}{{\cal{D}}}
+  \newcommand{\Bin}{{\cal{B}}}
+\newcommand {\p} {\stress {p}}
+\newcommand {\q} { {(1-p)}}
+\newcommand {\ql} {\stress {q}}
+
+ \newcommand {\Elite} {\stress {E_q}}
+\newcommand {\Elitet} {\stress {E_ \Term}}
+\newcommand {\length} { {l}}
+\newcommand {\tf} { {tf}}
+\newcommand {\tfn} {\stress {tfn}}
+\newcommand {\tfq} {\stress {tfq}}
+%\newcommand {\avg} {{\textrm{\bf avg}}\_{\bf\textrm length}}
+\newcommand {\TF} {\stress {TF}}
+\newcommand {\TFG} {\stress {n}}
+\newcommand {\FreqTotColl} {\stress {TFC}}
+\newcommand {\FreqTotCollSample} {\stress {TFC_E}}
+\newcommand {\FreqTotCollElitet}  {\stress {TFC_\Elitet}}
+\newcommand {\FreqTotCollElite} %{\stress {TFC_\Elitet}}
+{\stress{\sum_{d'\in\Elitet} length(d')}}
+ \renewcommand{\iff}{\mbox{$\Leftrightarrow$}}
+   \newcommand{\TotFreq}[1]{\sum_\stress {t'}\stress {tf}\left (\stress{ t'} | #1\right)}
+ \newcommand{\Collection}{\stress {D}}
+ \newcommand{\IDFE}{   I(n$_{\textrm e}$)B2}
+ \newcommand {\Prior}{\stress {P(\Term)}}
+% \newcommand{\docfrequency}{\stress {n$_{ \Term}$}}
+% \newcommand {\avg} {\stress{$\overline l$}}
+\newcommand{\docfrequency}{\stress {n_{\Term}}}
+ \newcommand {\df}{ \stress {\docfrequency}}
+ \newcommand {\avg} {\stress{\overline l}}
+ 
+ \newcommand{\accauno}{\stress {H1}}
+\newcommand{\accadue}{\stress {H2}}
+\newcommand{\accatre}{\stress {H3}}
+
+%---------------------------------------------------------------
+\definecolor{darkgreen1}{rgb}{0,0.6,0}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{lightpink}{rgb}{1,0.9,0.9}
+%\definecolor{lightblue}{rgb}{0.8,0.95,1}
+\definecolor{lightblue}{rgb}{0.8,1,1}
+\definecolor{bluemare}{rgb}{0,0.5,1}
+\definecolor{darkblue}{rgb}{0,0,0.8}
+\definecolor{darkmagenta}{rgb}{0.5,0,0.5}
+\definecolor{darkred}{rgb}{0.9,0.1,0}
+\definecolor{giallino}{rgb}{1,1,0.8}
+\definecolor{flashgreen}{rgb}{0,0.9,0.9}
+\definecolor{violetto}{rgb}{0.9,0.9,1}
+%---------------------------------------------------------------
+
+\setbeamercolor{math text}{fg=xkcdDeepSeaBlue,bg=white}
+\setbeamercolor{math text inlined}{parent=math text}
+\setbeamercolor{math text displayed}{parent=math text}
+
+\addtobeamertemplate{frametitle}{\donotcoloroutermaths}
+
+%=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%
+%    DOCUMENT BEGINS HERE 
+%
+%=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\begin{document}
+
+%=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%   TITLE START   -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\titlepage
+
+
+\input{2-probabilistic-learning}
+
+
+\end{document}
