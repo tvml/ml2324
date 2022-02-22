@@ -8,4 +8,4 @@ header: no
 ---
 
 1. [`Fondamenti.`{:.filelink}]({{ site.baseurl }}{%link note/1-foundations-notes.pdf %}) Concetti fondamentali del machine learning
-1. [`Probabilità e apprendimento.`{:.filelink}]({{ site.baseurl }}{%link notes/2-probabilistic-learning-notes.pdf %}) Approcci probabilistici all'apprendimento
+1. [`Probabilità e apprendimento.`{:.filelink}]({{ site.baseurl }}{%link note/2-probabilistic-learning-notes.pdf %}) Approcci probabilistici all'apprendimento
