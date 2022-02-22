@@ -7,9 +7,9 @@ permalink: /lucidi/
 header: no
 ---
 
-1. [`Introduzione al ML.`{:.filelink}]({{ site.baseurl }}{%link slides/0-ml-teaser.pdf %}) Introduzione al machine learning
+1. [`Introduzione al ML.`{:.filelink}]({{ site.baseurl }}{%link slides/0-ml_teaser.pdf %}) Introduzione al machine learning
 1. [`Fondamenti.`{:.filelink}]({{ site.baseurl }}{%link slides/1-foundations-slides.pdf %}) Concetti fondamentali del machine learning
-1. [`Probabilità e apprendimento.`{:.filelink}]({{ site.baseurl }}{%link slides/2-probabilistic-learning.pdf %}) Approcci probbilistici all'apprendimento
+1. [`Probabilità e apprendimento.`{:.filelink}]({{ site.baseurl }}{%link slides/2-probabilistic-learning-slides.pdf %}) Approcci probbilistici all'apprendimento
 <!--
 1. [`Bayes.`{:.filelink}]({{ site.baseurl }}{%link slides/bayesian.pdf %}) Fondamenti di statistica bayesiana
 1. [`Inferenza.`{:.filelink}]({{ site.baseurl }}{%link slides/model_inference.pdf %}) Inferenza probabilistica
