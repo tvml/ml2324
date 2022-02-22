@@ -34,6 +34,8 @@ Testi di Machine Learning liberamente disponibili su Internet
 
 * AA.VV. [Dive into Deep Learning](https://d2l.ai)
 
+* H. Daumé III [A Course on Machine Learning](http://ciml.info)
+
 ### Documentazione tecnica
 Manuali per l'utilizzo di strumenti e librerie software
 
