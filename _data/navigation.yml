@@ -17,6 +17,10 @@
   url: "/lucidi/"
   side: left
   
+- title: note
+  url: "/note/"
+  side: left
+  
 - title: codici
   url: "/codici/"
   side: left
