@@ -8,8 +8,10 @@ header: no
 ---
 
 
+
+1. [`mnist_keras.`{:.codelink}]({{ site.baseurl }}{%link codici/mnist_keras.ipynb %}) Riconoscimento caratteri (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml2122/blob/master/codici/mnist_keras.ipynb)
+
 <!--
-1. [`mnist_keras.`{:.codelink}]({{ site.baseurl }}{%link codici/mnist_keras.ipynb %}) Riconoscimento caratteri (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/mnist_keras.ipynb)
 1. [`loss.`{:.codelink}]({{ site.baseurl }}{%link codici/loss.ipynb %}) Considerazioni su loss functions e loro ottimizzazione (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/loss.ipynb)
 1. [`overfitting.`{:.codelink}]({{ site.baseurl }}{%link codici/overfitting.ipynb %}) Illustrazione overfitting (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/overfitting.ipynb)
 1. [`regression.`{:.codelink}]({{ site.baseurl }}{%link codici/regression.ipynb %}) Esempi di regressione mediante scikit-learn (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/regression.ipynb)
