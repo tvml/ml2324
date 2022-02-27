@@ -10,7 +10,7 @@ header: no
 
 
 
-1. [`mnist`{:.codelink}]({{ site.baseurl }}{%link codici/mlp_mnist_tf.ipynb %}) Riconoscimento caratteri (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/main/codici/mlp_mnist_tf.ipynb)
+1. [`mnist`{:.codelink}]({{ site.baseurl }}{%link codici/mlp_mnist_tf.ipynb %}) Riconoscimento caratteri (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/mlp_mnist_tf.ipynb)
 
 <!--1. [`loss.`{:.codelink}]({{ site.baseurl }}{%link codici/loss.ipynb %}) Considerazioni su loss functions e loro ottimizzazione (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/loss.ipynb)
 1. [`overfitting.`{:.codelink}]({{ site.baseurl }}{%link codici/overfitting.ipynb %}) Illustrazione overfitting (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/overfitting.ipynb)
