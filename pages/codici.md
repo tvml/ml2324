@@ -11,8 +11,8 @@ header: no
 
 
 1. [`mnist`{:.codelink}]({{ site.baseurl }}{%link codici/mlp_mnist_tf.ipynb %}) Riconoscimento caratteri (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/main/codici/mlp_mnist_tf.ipynb)
-<!--
-1. [`loss.`{:.codelink}]({{ site.baseurl }}{%link codici/loss.ipynb %}) Considerazioni su loss functions e loro ottimizzazione (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/loss.ipynb)
+
+<!--1. [`loss.`{:.codelink}]({{ site.baseurl }}{%link codici/loss.ipynb %}) Considerazioni su loss functions e loro ottimizzazione (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/loss.ipynb)
 1. [`overfitting.`{:.codelink}]({{ site.baseurl }}{%link codici/overfitting.ipynb %}) Illustrazione overfitting (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/overfitting.ipynb)
 1. [`regression.`{:.codelink}]({{ site.baseurl }}{%link codici/regression.ipynb %}) Esempi di regressione mediante scikit-learn (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/regression.ipynb)
 1. [`linregr_gradient.`{:.codelink}]({{ site.baseurl }}{%link codici/linregr_gradient.ipynb %}) Regressione lineare con gradiente (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/linregr_gradient.ipynb)
