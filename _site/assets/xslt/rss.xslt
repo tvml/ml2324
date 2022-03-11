@@ -210,6 +210,12 @@
           
           
         
+
+              
+
+          
+          
+        
         
       </ul>
 
@@ -269,6 +275,21 @@
             
             
               <li><a href="http://localhost:4000/ml2122/lucidi/">lucidi</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a href="http://localhost:4000/ml2122/note/">note</a></li>
               <li class="divider"></li>
 
             

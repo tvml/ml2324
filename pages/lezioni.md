@@ -13,8 +13,13 @@ header: no
         <table>
             {% for post in site.categories.lezioni reversed %}
             <tr>
-                <td width="15%" class='date'>{{post.data}}</td>  
+                <td width="25%" class='date'>{{post.data}}</td>  
                 <td>{{ post.args }}</td>
+            </tr>
+            <tr>
+                <td colspan='2'>
+                {{ post.excerpt }}
+                </td>
             </tr>
     	{% endfor %}
         </table>

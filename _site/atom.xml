@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>http://localhost:4000/ml2122/</id>
 	<title>Machine learning</title>
-	<updated>2022-01-28T13:31:40+01:00</updated>
+	<updated>2022-03-11T16:10:48+01:00</updated>
 
 	<subtitle>Informazioni, comunicazioni e materiali relativi al corso di Machine learning, CdLM in Informatica, Università di Roma Tor Vergata.</subtitle>
 
@@ -24,5 +24,35 @@
 
 	<generator uri="http://jekyllrb.com" version="3.8.5">Jekyll</generator>
 
+	
+		<entry>
+			<id>http://localhost:4000/ml2122/lezioni/lezione/</id>
+			<title>Lezione 1</title>
+			<link href="http://localhost:4000/ml2122/lezioni/lezione/" rel="alternate" type="text/html" title="Lezione 1" />
+			<updated>2022-03-10T00:00:00+01:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Phlow</name>
+					
+					
+					
+						<uri>http://phlow.de/</uri>
+					
+				</author>
+			
+			<summary></summary>
+			<content type="html" xml:base="http://localhost:4000/ml2122/lezioni/lezione/">&lt;p&gt;&lt;a href=&quot;https://uniroma2.sharepoint.com/:v:/s/GAMBOSI-8066132-MACHINE_LEARNING_1/EQNQMM8F-UxDtgUGi3IECssByNijYC8V1kokAccc3S2s2w?e=cESz3u&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
+</content>
+
+			
+				<category term="lezioni" />
+			
+			
+
+			<published>2022-03-10T00:00:00+01:00</published>
+		</entry>
 	
 </feed>

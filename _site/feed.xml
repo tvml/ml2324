@@ -8,5 +8,14 @@
 		<link>http://localhost:4000/ml2122/</link>
 		<atom:link href="http://localhost:4000/ml2122/feed.xml" rel="self" type="application/rss+xml" />
 		
+			<item>
+				<title>Lezione 1</title>
+				<link>http://localhost:4000/ml2122/lezioni/lezione/</link>
+				<pubDate>Thu, 10 Mar 2022 00:00:00 +0100</pubDate>
+				<description>&lt;p&gt;&lt;a href=&quot;https://uniroma2.sharepoint.com/:v:/s/GAMBOSI-8066132-MACHINE_LEARNING_1/EQNQMM8F-UxDtgUGi3IECssByNijYC8V1kokAccc3S2s2w?e=cESz3u&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
+</description>
+				<guid isPermaLink="true">http://localhost:4000/ml2122/lezioni/lezione/</guid>
+			</item>
+		
 	</channel>
 </rss>
