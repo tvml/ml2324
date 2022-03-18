@@ -14,6 +14,8 @@ header: no
 
 1. [`Titanic`{:.codelink}]({{ site.baseurl }}{%link codici/titanic.ipynb %}) Sopravvissuti Titanic (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/titanic.ipynb)
 
+1. [`Loss`{:.codelink}]({{ site.baseurl }}{%link codici/loss.ipynb %}) Funzione loss e GD (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/loss.ipynb)
+
 <!--1. [`loss.`{:.codelink}]({{ site.baseurl }}{%link codici/loss.ipynb %}) Considerazioni su loss functions e loro ottimizzazione (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/loss.ipynb)
 1. [`overfitting.`{:.codelink}]({{ site.baseurl }}{%link codici/overfitting.ipynb %}) Illustrazione overfitting (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/overfitting.ipynb)
 1. [`regression.`{:.codelink}]({{ site.baseurl }}{%link codici/regression.ipynb %}) Esempi di regressione mediante scikit-learn (notebook) [In nbviewer](https://nbviewer.jupyter.org/github/tvml/ml1819/blob/master/codici/regression.ipynb)
