@@ -6,6 +6,8 @@ teaser: ""
 permalink: /dataset/
 header: no
 ---
+
+1. [`TestSet.`{:.datalink}]({{ site.baseurl }}{%link dataset/testSet.txt %}) Dataset per logistic regression.
 <!--
 1. [`Housingdata.`{:.datalink}]({{ site.baseurl }}{%link dataset/housing.data.txt %}) Dataset abitazioni Boston.
 
