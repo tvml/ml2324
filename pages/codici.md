@@ -16,6 +16,8 @@ header: no
 
 1. [`Loss`{:.codelink}]({{ site.baseurl }}{%link codici/loss.ipynb %}) Funzione loss e GD (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/loss.ipynb)
 
+1. [`Regression.`{:.codelink}]({{ site.baseurl }}{%link codici/regression.ipynb %}) Esempi di regressione mediante scikit-learn (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/regression.ipynb)
+
 1. [`Beta_bernoulli.`{:.codelink}]({{ site.baseurl }}{%link codici/BetaBernoulli.ipynb %}) Modello Beta-Bernoulli (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/BetaBernoulli.ipynb)
 
 1. [`Naive bayes.`{:.codelink}]({{ site.baseurl }}{%link codici/naivebayes.ipynb %}) Classificazione naive bayes di documenti (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/naivebayes.ipynb)
