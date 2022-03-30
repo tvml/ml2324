@@ -13,4 +13,4 @@ header: no
 1. [`Fondamenti.`{:.filelink}]({{ site.baseurl }}{%link note/1-foundations-notes.pdf %}) Concetti fondamentali del machine learning
 1. [`Probabilità e apprendimento.`{:.filelink}]({{ site.baseurl }}{%link note/2-probabilistic-learning-notes.pdf %}) Approcci probabilistici all'apprendimento
 1. [`Training.`{:.filelink}]({{ site.baseurl }}{%link note/3-training-notes.pdf %}) Loss functions e metodi di GD
-1. [`Fitting.`{:.filelink}]({{ site.baseurl }}{%link note/4-fitting-notes.pdf %}) Fitting of functions
+1. [`Linear regression.`{:.filelink}]({{ site.baseurl }}{%link note/4-linregr-notes.pdf %}) Regressione lineare

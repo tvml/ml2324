@@ -35,3 +35,11 @@ header: no
 1. [`Biasvar.`{:.codelink}]({{ site.baseurl }}{%link codici/biasvar.ipynb %}) Effetto coefficiente di regolarizzazione in Ridge regression (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/biasvar.ipynb)
 
 1. [`Model selection.`{:.codelink}]({{ site.baseurl }}{%link codici/model_selection.ipynb %}) Esempio di overfitting con model selection (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/model_selection.ipynb)
+
+1. [`linregr_samples.`{:.codelink}]({{ site.baseurl }}{%link codici/linregr_samples.ipynb %}) Apprendimento sequenziale in bayesian regression (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/linregr_samples.ipynb)
+
+1. [`linregr_predict.`{:.codelink}]({{ site.baseurl }}{%link codici/linregr_predict.ipynb %}) Distribuzione predittiva in fully bayesian regression (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/linregr_predict.ipynb)
+
+1. [`equiv_kernel.`{:.codelink}]({{ site.baseurl }}{%link codici/equiv_kernel.ipynb %}) Calcolo e visualizzazione del kernel equivalente (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/equiv_kernel.ipynb)
+
+1. [`linregr_gradient.`{:.codelink}]({{ site.baseurl }}{%link codici/linregr_gradient.ipynb %}) Regressione lineare con gradiente (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/linregr_gradient.ipynb)
