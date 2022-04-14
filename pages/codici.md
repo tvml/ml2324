@@ -43,3 +43,7 @@ header: no
 1. [`equiv_kernel.`{:.codelink}]({{ site.baseurl }}{%link codici/equiv_kernel.ipynb %}) Calcolo e visualizzazione del kernel equivalente (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/equiv_kernel.ipynb)
 
 1. [`linregr_gradient.`{:.codelink}]({{ site.baseurl }}{%link codici/linregr_gradient.ipynb %}) Regressione lineare con gradiente (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/linregr_gradient.ipynb)
+
+. [`linregr_mc.`{:.codelink}]({{ site.baseurl }}{%link codici/linregr_mc.ipynb %}) Regressione lineare mediante inferenza MCMC in pymc3 (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/linregr_mc.ipynb)
+
+1. [`linear regression.`{:.codelink}]({{ site.baseurl }}{%link codici/linear_regression.ipynb %}) Metodi di regressione lineare(notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/linear_regression.ipynb)
