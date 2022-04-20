@@ -14,3 +14,5 @@ header: no
 1. [`Probabilità e apprendimento.`{:.filelink}]({{ site.baseurl }}{%link note/2-probabilistic-learning-notes.pdf %}) Approcci probabilistici all'apprendimento
 1. [`Training.`{:.filelink}]({{ site.baseurl }}{%link note/3-training-notes.pdf %}) Loss functions e metodi di GD
 1. [`Linear regression.`{:.filelink}]({{ site.baseurl }}{%link note/4-linregr-notes.pdf %}) Regressione lineare
+1. [`Linear classification.`{:.filelink}]({{ site.baseurl }}{%link note/5-linclass-notes.pdf %}) Classificazione lineare
+1. [`Probabilistic generative classification.`{:.filelink}]({{ site.baseurl }}{%link note/6-probclass-gen-notes.pdf %}) Classificazione probabilistica generativa
