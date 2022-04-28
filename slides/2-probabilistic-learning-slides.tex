@@ -1,0 +1,1033 @@
+\documentclass[9pt, aspectratio=169, sectionpages, handout]{beamer}
+%\documentclass{beamer}
+\usetheme[mode=light]{sthlmnord}
+\usepackage{irbookslide2}
+\usepackage{url}
+\usepackage{newalg}
+\usepackage{pstricks,pst-node,pst-plot,pst-tree}
+\usepackage{graphicx}
+ \usepackage{color}
+ \usepackage[]{amsmath}
+%\usepackage[landscape]{epsfig}
+\usepackage{xkcdcols}
+
+\usepackage[italian]{babel}
+\selectlanguage{italian}
+%%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.14}
+\usepackage{cancel}
+\usepackage{math}
+\usepackage{commands}
+\usepackage{adg}
+\usepackage{tikz}
+\usetikzlibrary{arrows,decorations.pathmorphing,positioning,backgrounds,fit}
+\usetikzlibrary{automata}
+\usetikzlibrary{arrows,decorations.pathmorphing,positioning,backgrounds,fit}
+\usetikzlibrary{arrows,decorations.pathmorphing,positioning,backgrounds,fit}
+\usetikzlibrary{decorations,positioning,backgrounds,fit,shadows,automata,backgrounds,patterns,snakes}
+\usetikzlibrary{calc,intersections,through,shapes,scopes,chains,matrix,shapes.arrows}
+%
+%\definecolor{pale}{RGB}{245,245,200}
+
+\definecolor{pale}{RGB}{145,145,145}
+\definecolor{node}{RGB}{220,220,220}
+%\definecolor{observed}{RGB}{145,145,145}
+\definecolor{observed}{RGB}{240,140,140}
+\definecolor{box}{RGB}{240,240,240}
+%\definecolor{param}{RGB}{176,200,233}
+\definecolor{param}{RGB}{255,255,221}
+
+\definecolor{ft}{RGB}{210,40,40}
+\definecolor{bt}{RGB}{54,94,155}
+\definecolor{nt}{RGB}{90,90,90}
+\definecolor{mt}{RGB}{168,27,49}
+\definecolor{at}{RGB}{170,80,80}
+%
+\usepackage{colortbl}
+\usepackage{environ}
+
+
+%%%%%%%%%%%%%%%%%%%%
+\newenvironment<>{definizione}[1]{%
+ \begin{block}{#1}}{\end{block}}
+ 
+\NewEnviron{specialframe}[1]{%
+\begingroup
+\setbeamercolor{background canvas}{bg=\cnBlue}
+\begin{frame}{#1}
+\cGrey{\BODY}
+  \end{frame}
+\endgroup
+}
+
+% > > > CTAN Packages
+%		the subfiles package is being used to compile individual slides
+%		using the main tex file.  Individual slides can then be included
+%		into multiple slide decks.
+\usepackage{subfiles}
+
+% > > > Custom Packages
+\usepackage{mhomath}
+
+% > > > Generate some Lorem Ipsum placeholder text.
+\usepackage{lipsum}
+\usepackage{commands}
+% > > >	Image File Paths
+% 		Here you can add one or more paths to where your images are being
+%		stored.  This will allow you to include only the image file 
+%		name when placing it into your document.
+%\graphicspath{{path1},{path2},{path3}}
+\graphicspath{{./assets/}} 
+
+\newcommand{\snord}{\cnordTen{sthlm}\cnordEight{NORD}}
+
+% > > > Document Information
+\subtitle{Probabilistic learning}
+\title{Machine learning}
+\newcommand{\course}{Corso di Laurea Magistrale in Informatica}
+\newcommand{\filename}{a.a. 2021-2022}
+\author{Prof. Giorgio Gambosi}
+\institute{Università di Roma Tor Vergata}
+\newcommand{\othertext}{}
+%\titlegraphic{nordtitlelogodark}
+\titlegraphic{logo}
+
+% > > > pdf customizations via hyperref (pkg installed by beamer)
+\hypersetup{
+colorlinks=true,
+% You might want to disable color links for you final draft.
+%colorlinks=false,
+linkcolor={nordNine},
+citecolor={nordNine},
+urlcolor={nordNine}
+}
+
+\newcommand {\Prob} {\textrm {P}}
+\newcommand {\Query} {\textrm {q}}
+\newcommand {\Term} {\textrm {w}}
+\renewcommand {\P} {\textrm {P}}
+ \newcommand {\Inf} {{\textrm{ Inf}}}
+ \newcommand {\walk} {\textrm {walk}}
+ \newcommand{\probability}{\textrm {probability}}
+ \newcommand{\relevance}{{\textrm{ relevance}}}
+ \newcommand{\documents}{{\textrm{ document}}}
+\newcommand {\weight} {{\textrm{ weight}}}
+ \newcommand{\random}{\textrm {random process}}
+%%%%%%%%%%% %%%%%%%%%%%%%%%%
+%%				 						%
+%%   Random variable definitions in formulas  		%
+%%										%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \newcommand{\stress}[1]{ {{\bf #1}} }
+%\newcommand{\stress}[1]{ {\textrm{\em #1}}}
+  
+ \newcommand {\doc} {\stress {d}}
+ \newcommand {\Vocabulary} {\stress {V}}
+\newcommand{\CollSize}{\stress {N}}
+% \newcommand{\Freq}{\stress tf}
+  \newcommand{\Div}{{\cal{D}}}
+  \newcommand{\Bin}{{\cal{B}}}
+\newcommand {\p} {\stress {p}}
+\newcommand {\q} { {(1-p)}}
+\newcommand {\ql} {\stress {q}}
+
+ \newcommand {\Elite} {\stress {E_q}}
+\newcommand {\Elitet} {\stress {E_ \Term}}
+\newcommand {\length} { {l}}
+\newcommand {\tf} { {tf}}
+\newcommand {\tfn} {\stress {tfn}}
+\newcommand {\tfq} {\stress {tfq}}
+%\newcommand {\avg} {{\textrm{\bf avg}}\_{\bf\textrm length}}
+\newcommand {\TF} {\stress {TF}}
+\newcommand {\TFG} {\stress {n}}
+\newcommand {\FreqTotColl} {\stress {TFC}}
+\newcommand {\FreqTotCollSample} {\stress {TFC_E}}
+\newcommand {\FreqTotCollElitet}  {\stress {TFC_\Elitet}}
+\newcommand {\FreqTotCollElite} %{\stress {TFC_\Elitet}}
+{\stress{\sum_{d'\in\Elitet} length(d')}}
+ \renewcommand{\iff}{\mbox{$\Leftrightarrow$}}
+   \newcommand{\TotFreq}[1]{\sum_\stress {t'}\stress {tf}\left (\stress{ t'} | #1\right)}
+ \newcommand{\Collection}{\stress {D}}
+ \newcommand{\IDFE}{   I(n$_{\textrm e}$)B2}
+ \newcommand {\Prior}{\stress {P(\Term)}}
+% \newcommand{\docfrequency}{\stress {n$_{ \Term}$}}
+% \newcommand {\avg} {\stress{$\overline l$}}
+\newcommand{\docfrequency}{\stress {n_{\Term}}}
+ \newcommand {\df}{ \stress {\docfrequency}}
+ \newcommand {\avg} {\stress{\overline l}}
+ 
+ \newcommand{\accauno}{\stress {H1}}
+\newcommand{\accadue}{\stress {H2}}
+\newcommand{\accatre}{\stress {H3}}
+
+%---------------------------------------------------------------
+\definecolor{darkgreen1}{rgb}{0,0.6,0}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{lightpink}{rgb}{1,0.9,0.9}
+%\definecolor{lightblue}{rgb}{0.8,0.95,1}
+\definecolor{lightblue}{rgb}{0.8,1,1}
+\definecolor{bluemare}{rgb}{0,0.5,1}
+\definecolor{darkblue}{rgb}{0,0,0.8}
+\definecolor{darkmagenta}{rgb}{0.5,0,0.5}
+\definecolor{darkred}{rgb}{0.9,0.1,0}
+\definecolor{giallino}{rgb}{1,1,0.8}
+\definecolor{flashgreen}{rgb}{0,0.9,0.9}
+\definecolor{violetto}{rgb}{0.9,0.9,1}
+%---------------------------------------------------------------
+
+\setbeamercolor{math text}{fg=xkcdDeepSeaBlue,bg=white}
+\setbeamercolor{math text inlined}{parent=math text}
+\setbeamercolor{math text displayed}{parent=math text}
+
+\addtobeamertemplate{frametitle}{\donotcoloroutermaths}
+
+%=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%
+%    DOCUMENT BEGINS HERE 
+%
+%=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\begin{document}
+
+%=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%   TITLE START   -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\titlepage
+
+
+\begin{frame}{Probabilistic approaches}
+As done before, we assume that the observed dataset (features and target) has been derived by randomly sampling:
+\begin{itemize}
+\item $\mathcal{X}$ according to the probability distribution $p_{\mathcal{D}_1}(x)$ (usually the uniform distribution)
+\item $\mathcal{Y}$ according to the conditional distribution $p_{\mathcal{D}_2}(y|x)$
+\end{itemize}
+\begin{enumerate}
+\item we may then consider a class of possible conditional distributions $\mathcal{P}$ and
+\item select (infer) the ``best'' conditional distribution $p^*\in\mathcal{P}$ from the available knowledge (that is, the dataset), according to some measure $q$ 
+\item given any new item $x$, apply  $p^*(y|\x)$ to assign probabilities for each possible value of the corresponding target
+\item an independent \alert{decision strategy} must be applied to $p^*(y|\x)$ to return a specific prediction $h(\x)$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Inferring a best distribution}
+\begin{itemize}
+\item how to define the class of possible conditional distributions $p(y|\x)$?
+\begin{itemize}
+\item usually, parametric approach: distributions defined by a common (arbitrary) structure and a set of parameters
+\end{itemize}
+\item what is a measure $q(p, \mathcal{T})$ of the quality of the distribution (given the dataset $\mathcal{T}=(\X,\t)$)?
+\begin{itemize}
+\item this is related to how a dataset generated by randomly sampling from $\mathcal{D}_1$ (usually uniform) and $\mathcal{D}_2$ could be similar to the available dataset $\mathcal{T}$
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{A different approach}
+Instead of finding a best distribution $p^*\in\mathcal{P}$ and use it to predict target probabilities as $p^*(y|\x)$ for any element $\x$, we could 
+\begin{itemize}
+\item consider for each possible conditional distribution $p\in\mathcal{P}$ its quality $q(p, \mathcal{T})$
+\item compose all conditional distributions $p(y|\x)$ each weighted by its quality $q(p, \mathcal{T})$ (for example by means of a weighted averaging)
+\item apply the resulting distribution 
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Different strategies}
+Assume $q$ takes the form of a probability distribution (of probability distribution)
+\begin{itemize}
+\item first approach: take the modal value (the distribution of maximum quality) and apply it to perform predictions
+\item second approach: compute the expectation of the distributions, wrt the probability distribution $q$ 
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}\frametitle{Inference of predictive distribution}
+\begin{block}{Dataset}
+We assume elements in $\mathcal{T}$ correspond to a set of $n$ samples, independently drawn from the same probability distribution (that is, they are \alert{independent and identically distributed}, i.i.d): they can be seen as $n$ realizations of a single random variable. 
+\end{block}
+
+We are interested in learning, starting from $\mathcal{T}$, a \alert{predictive distribution} $p(\x|\X)$ (or $p(\x,t|\X,\t)$) for any new element (or element-target pair). We may interpret this as the probability that, in a random sampling, the element actually returned is indeed $\x$ (or $\x,t$).
+
+\begin{itemize}
+\item in the case that $\mathcal{T}=\X=\{\x_1,\ldots,\x_n\}$, we are interested in deriving the probability distribution $p(\x|\X)$ of a new element, given the knowledge of the set $\X$ 
+\item in the case that $\mathcal{T}=(\X,\t)=\{(\x_1,t_1),\ldots,(\x_n,t_n)\}$, we are interested in deriving the joint probability distribution  $p(\x,t|\X,\t)$ or, assuming $p(\x|\X,\t)$ uniform and thus also independent from $\X,\t$, the conditional distribution $p(t|\x,\X,\t)$, given the knowledge of the set of pairs $\X,\t$ 
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}\frametitle{Probabilistic models}
+A \alert{probabilistic model} is a collection of probability distributions with the same structure, defined over the data domain. Probability distribution are instances of the probabilistic model and are characterized by 
+the values assumed by a set of \alert{parameters}.
+\begin{example}
+In a bivariate gaussian probabilistic model, distributions are characterized by the values assumed by:
+\begin{enumerate}
+\item the mean $\Vmu=(\mu_1,\mu_2)$ 
+\item the covariance matrix $\VSigma=\left(
+\begin{array}{cc}
+\sigma_{11} &\sigma_{12} \\
+\sigma_{21} &\sigma_{22} 
+\end{array}
+\right)$
+\end{enumerate}
+where $\sigma_{12}=\sigma_{21}$
+\end{example}
+A probabilistic model could be
+\begin{description}
+\item[Parametric] if the set of parameters is given, finite, and independent from the data
+\item[Non parametric] if the set of parameters is not given in advance, but derives from the data
+\end{description}
+\end{frame}
+
+
+
+
+\begin{frame}\frametitle{Likelihood}
+Given a dataset $\mathcal{T}$ and a probability distribution $p$ of parameters $\Vtheta$ defined on the same data domain, 
+\begin{itemize}
+\item the \alert{likelihood} of $\Vtheta$ wrt $\mathcal{T}$ is defined as
+\[
+L(\Vtheta|\mathcal{T}) = p(\mathcal{T}|\Vtheta)
+\]
+the probability of the dataset (that the dataset is generated) under distribution $p$ with parameters $\Vtheta$
+
+\item while the probability $p(\mathcal{T}|\Vtheta)$ is considered as a function of $p(\mathcal{T}|\Vtheta)$ with $\Vtheta$ fixed, the likelihood $L(\Vtheta|\mathcal{T})$ is a function of $\Vtheta$ with $\mathcal{T}$ fixed
+
+\item parameters $\Vtheta$ are considered as (independent) variables (\alert{frequentist interpretation} of probability) 
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}\frametitle{Likelihood}
+\begin{itemize}
+\item By assuming that elements in $\mathcal{T}$ are i.i.d., 
+\begin{align*}
+L(\Vtheta|\mathcal{T}) &=p(\X|\Vtheta)=\prod_{i=1}^np(\x_i|\Vtheta)&\hspace{-8.5cm}\text{in the first case}\\
+L(\Vtheta|\mathcal{T}) &=p(\X,\t|\Vtheta)=\prod_{i=1}^np(\x_i,t_i|\Vtheta)=\prod_{i=1}^np(t_i|\x_i,\Vtheta)p(\x_i|\Vtheta)=p(\x|\Vtheta)\prod_{i=1}^np(t_i|\x_i,\Vtheta)\\
+&=p(\x)\prod_{i=1}^np(t_i|\x_i,\Vtheta)\propto\prod_{i=1}^np(t_i|\x_i,\Vtheta)&\hspace{-2.5cm}\text{in the second case, assuming $p(\x|\Vtheta)$ uniform}
+\end{align*}
+%\end{block}
+%\begin{block}<1->{Idea}
+%Determine the parameter value that maximize the likelihood
+%\[L(\Vtheta|\X)=p(\X|\Vtheta)=\prod_{i=1}^{N}p(\x_{i}|\Vtheta)\]
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}\frametitle{Maximum likelihood estimate}
+\begin{block}<1->{Approach}
+
+\alert{Frequentist} point of view: parameters are deterministic variables, whose value is unknown and must be  estimated.
+
+%\end{block}
+%\begin{block}<1->{Idea}
+Determine the parameter value that maximize the likelihood
+\[
+\Vtheta^*=\argmax{\Vtheta}{L(\Vtheta|\mathcal{T})}=\argmax{\Vtheta}{p(\X|\Vtheta)}=\argmax{\Vtheta}{\prod_{i=1}^{n}p(\x_{i}|\Vtheta)}
+\]
+or 
+\[
+\Vtheta^*=\argmax{\Vtheta}{L(\Vtheta|\mathcal{T})}=\argmax{\Vtheta}{p(\X,\t|\Vtheta)}=\argmax{\Vtheta}{p(\x)\prod_{i=1}^{n}p(t_i|\x_{i},\Vtheta)}=\argmax{\Vtheta}{\prod_{i=1}^{n}p(t_i|\x_{i},\Vtheta)}
+\]
+\end{block}
+\end{frame}
+
+\begin{frame}\frametitle{Maximum likelihood estimate}
+
+\begin{block}<1->{Log-likelihood}
+\[l(\Vtheta|\mathcal{T})=\ln L(\Vtheta|\mathcal{T})%=\sum_{i=1}^{N}\ln p(\x_{i}|\Vtheta)
+\]
+is usually preferrable, since products are turned into sums, while $\Vtheta^*$ remains the same (since log is a monotonic function), that is
+\[\argmax{\Vtheta}l(\Vtheta|\mathcal{T})=\argmax{\Vtheta}{L(\Vtheta|\mathcal{T})}\]
+\end{block}
+\begin{block}<1->{Estimate}
+\[
+\Vtheta^*_{ML}=\argmax{\Vtheta}{p(\X|\Vtheta)}=\argmax{\Vtheta}{\sum_{i=1}^{n}\ln p(\x_{i}|\Vtheta)}
+\]
+or 
+\[
+\Vtheta^*_{ML}=\argmax{\Vtheta}{p(\X,\t|\Vtheta)}=\argmax{\Vtheta}{\sum_{i=1}^{n}\ln p(t_i|\x_{i},\Vtheta)}
+\]
+\end{block}
+\end{frame}
+
+\begin{frame}\frametitle{Maximum likelihood estimate}
+\begin{block}<1->{Solution}
+Solve the system
+\[
+\frac{\partial l(\Vtheta|\mathcal{T})}{\partial\theta_{i}}=0\hspace{2cm}i=1,\ldots,d
+\]
+more concisely,
+\[
+\nabla_{\Vtheta}l(\Vtheta|\mathcal{T})=%\left[
+%     \begin{array}{c}
+%          \frac{\partial l(\Vtheta|\X)}{\partial\theta_{1}}  \\
+%          \vdots  \\
+%            \frac{\partial l(\Vtheta|\X)}{\partial\theta_{d}}  
+%     \end{array}
+%     \right]= \left[\begin{array}{c}
+%          0   \\
+%          \vdots   \\
+%          0 
+%     \end{array}
+%     \right]=
+\Zero
+\]
+\end{block}
+\begin{block}<1->{Prediction}
+Probability of a new observation $\x$:
+\begin{align*}
+p(\x|\X)&=\int_{\Vtheta} p(\x|\Vtheta)p(\Vtheta|\X)d\Vtheta\approx\int_{\Vtheta} p(\x|\Vtheta^*_{ML})p(\Vtheta|\X)d\Vtheta=p(\x|\Vtheta^*_{ML})\int_{\Vtheta}p(\Vtheta|\X)d\Vtheta=p(\x|\Vtheta^*_{ML})
+\end{align*}
+Predictive distribution $t|\x$:
+\begin{align*}
+p(t|\x,\X,\t)&=\int_{\Vtheta} p(t|\x,\Vtheta)p(\Vtheta|\X,\t)d\Vtheta\approx\int_{\Vtheta} p(t|\x, \Vtheta^*_{ML})p(\Vtheta|\X)d\Vtheta=p(\x|\Vtheta^*_{ML})\int_{\Vtheta}p(\Vtheta|\X,\t)d\Vtheta=p(t|\x,\Vtheta^*_{ML})
+\end{align*}
+\end{block}
+
+\end{frame}
+
+\begin{frame}\frametitle{Maximum likelihood estimate}
+\begin{example}
+Collection $\X$ of $n$ binary events, modeled through a Bernoulli distribution with unknown parameter $\phi$
+\[
+p(x|\phi)=\phi^{x}(1-\phi)^{1-x}
+\]
+Likelihood: $L(\phi|\X)=\prod_{i=1}^{n}\phi^{x_{i}}(1-\phi)^{1-x_{i}}$
+
+\bigskip
+Log-likelihood: $l(\phi|\X)=\sum_{i=1}^{n}\left(x_{i}\ln\phi+(1-x_{i})\ln(1-\phi)\right)=n_{1}\ln\phi+n_{0}\ln(1-\phi)$
+
+\medskip
+where $n_{0}$ ($n_{1}$) is the number of events $x\in\X$ equal to 0 (1)
+\[
+\frac{\partial l(\phi|\X)}{\partial\phi}=\frac{n_{1}}{\phi}-\frac{n_{0}}{1-\phi}=0\hspace{1cm}\implies\hspace{1cm}{\phi^*}_{ML}=\frac{n_{1}}{n_{0}+n_{1}}=\frac{n_{1}}{n}
+\]
+\end{example}
+\end{frame}
+
+
+\begin{frame}\frametitle{Maximum likelihood estimate}
+\begin{example}
+Linear regression: collection $\X,\t$ of value-target pairs, modeled as $p(\x,t)=p(\x)p(t|\x, \w, \sigma^2)$, with $\w\in\Real^d$, $w_0\in\Real$:
+\begin{itemize}
+\item $p(\x)$ uniform
+\item $p(t|\x,\w,\sigma^2)=\mathcal{N}(\w^T\x+w_0, 1/\beta)$ ($\beta$, the inverse of the variance, is the \alert{precision})
+\end{itemize}
+Likelihood: 
+\[
+L(\t|\X,\w,w_0,\beta)=\prod_{i=1}^{n}p(t_i|\x_i,\w,w_0,\beta)=\prod_{i=1}^{n}\mathcal{N}(\w^T\x_i+w_0, \beta)
+\]
+
+\bigskip
+Log-likelihood: 
+\begin{align*}
+l(\t|\X,\w,w_0,\beta)=
+&= -\frac{\beta}{2}\sum_{i=1}^{n}(\w^T\x_i+w_0-t_i)^2+\frac{n}{2}\ln\beta-\frac{n}{2}\ln (2\pi)
+\end{align*}
+
+\end{example}
+\end{frame}
+
+\begin{frame}\frametitle{Maximum likelihood estimate}
+\begin{example}
+
+\vspace{-.5cm}
+\begin{align*}
+\frac{\partial}{\partial w_k}l(\t|\X,\w,w_0,\beta)&=-\frac{\beta}{2}\sum_{i=1}^{n}(\w^T\x_i+w_0-t_i)x_{ik}\hspace{1cm}k=1,\ldots,d\\
+\frac{\partial}{\partial w_0}l(\t|\X,\w,w_0,\beta)&=-\frac{\beta}{2}\sum_{i=1}^{n}(\w^T\x_i+w_0-t_i)\\
+\frac{\partial}{\partial\beta}l(\t|\X,\w,w_0,\beta)&=-\frac{1}{2}\sum_{i=1}^{n}(\w^T\x_i+w_0-t_i)^2+\frac{n}{2\beta}
+\end{align*}
+The ML estimation for $\w, w_0$ (linear regression coefficients) is obtained as the solution of  the $(d+1,d+1)$ linear system 
+\begin{align*}
+\sum_{i=1}^{n}(\w^T\x_i+w_0-t_i)x_{ik}&=0\hspace{1cm}k=1,\ldots,d\\
+\sum_{i=1}^{n}(\w^T\x_i+w_0-t_i)&=0
+\end{align*}
+The ML estimation for $\beta$ is obtained by
+\[
+-\frac{1}{2}\sum_{i=1}^{n}(\w^T\x_i+w_0-t_i)^2+\frac{n}{2\beta}=0 \hspace{1cm}\implies\hspace{1cm}\beta_{ML}=\left(\frac{1}{n}\sum_{i=1}^{n}(\w^T\x_i+w_0-t_i)^2\right)^{-1}
+\]
+\end{example}
+\end{frame}
+
+
+%\begin{frame}\frametitle{ML and latent variables}
+%\begin{block}<1->{Hidden states}
+%If the model includes latent variables,  the dataset $\X$ only specifies values for observed variables. Since the estimate can take into account only observed values, latent variables are \alert{marginalized}:
+%\[
+%{\hat{\Vtheta}}_{ML}=\argmax{\Vtheta}\sum_{i=1}^{N}\ln\int_{\Z} p(x_{i}|\Vtheta)d\Z
+%\]
+%where $\Z$ is the set of latent variables.
+%\end{block}
+%\begin{block}<1->{Deriving the maximum liklelihood}
+%To compute ${\hat{\Vtheta}}_{ML}$, the usual approach is to set partial derivatives to 0:
+%\[
+%\frac{\partial}{\partial \theta_{j}}\sum_{i=1}^{N}\ln\int_{\Z} p(x_{i}|\Vtheta)d\Z=\sum_{i=1}^{N}\frac{\partial}{\partial \theta_{j}}\ln\int_{\Z} p(x_{i}|\Vtheta)d\Z=0
+%\]
+%This may turn out to be exceedingly complex.
+%\end{block}
+%\end{frame}
+
+\begin{frame}\frametitle{ML and overfitting}
+\begin{block}<1->{Overfitting}
+Maximizing the likelihood of the observed dataset tends to result into an estimate too sensitive to the dataset values, hence into \alert{overfitting}. The obtained estimates are suitable to model observed data, but may be too specialized to be used to model different datasets.
+\end{block}
+\begin{block}<1->{Penalty functions}
+An additional function $P(\Vtheta)$ can be introduced with the aim to limit overfitting and the overall complexity of the model.
+This results in the following function to maximize
+\[
+C(\Vtheta|\X)=l(\Vtheta|\X)-P(\Vtheta)
+\]
+as a common case,  $P(\Vtheta)=\frac{\gamma }{2}\|\Vtheta\|^{2}$, with $\gamma$ a \alert{tuning} parameter.
+\end{block}
+
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Maximum a posteriori estimate}
+\begin{block}<1->{Idea}
+Inference through maximum a posteriori (MAP) is similar to ML, but $\Vtheta$ is now considered as a random variable (bayesian approach), whose distribution has to be derived from observations, also taking into account previous knowledge (prior distribution). The parameter value maximizing
+\[
+p(\Vtheta|\mathcal{T})=\frac{p(\mathcal{T}|\Vtheta)p(\Vtheta)}{p(\mathcal{T})}
+\]
+is computed.
+\end{block}
+\end{frame}
+
+\begin{frame}\frametitle{Maximum a posteriori estimate}
+\begin{block}<1->{Estimate}
+\begin{align*}
+\Vtheta^*_{MAP}&=\argmax{\Vtheta} p(\Vtheta|\mathcal{T})=\argmax{\Vtheta}p(\mathcal{T}|\Vtheta)p(\Vtheta)\\
+&=\argmax{\Vtheta}L(\Vtheta|\mathcal{T})p(\Vtheta)=\argmax{\Vtheta}\left(l(\Vtheta|\mathcal{T})+\ln p(\Vtheta)\right)
+\end{align*}
+which results into
+\[
+\Vtheta^*_{MAP}=\argmax{\Vtheta}\left(\sum_{i=1}^{n}\ln p(\x_{i}|\Vtheta)+\ln  p(\Vtheta)\right)
+\]
+or 
+\[
+\Vtheta^*_{MAP}=\argmax{\Vtheta}\left(\sum_{i=1}^{n}\ln p(t_i|\x_{i},\Vtheta)+\ln  p(\Vtheta)\right)
+\]
+\end{block}
+\end{frame}
+
+\begin{frame}\frametitle{MAP and gaussian prior}
+\begin{block}<1->{Hypothesis}
+Assume $\Vtheta$ is distributed around the origin as a multivariate gaussian with uniform variance and null covariance.That is, 
+\[
+p(\Vtheta)\sim{\mathcal{N}}(\Vtheta|\Zero, \sigma^{2})=\frac{1}{(2\pi)^{d/2}\sigma^{d}}e^{-\frac{\|\Vtheta\|^{2}}{2\sigma^{2}}}\propto e^{-\frac{\|\Vtheta\|^{2}}{2\sigma^{2}}}%\Longleftrightarrow p(\theta_i)\sim{\cal N}(\theta|0, \sigma^{2}) \mbox{ for all }i=1,\ldots,d
+\]
+\end{block}
+\begin{block}<1->{Inference}
+From the hypothesis,
+\begin{align*}
+&\Vtheta^*_{MAP}=\argmax{\Vtheta} p(\Vtheta|\mathcal{T})=\argmax{\Vtheta}\left(l(\Vtheta|\mathcal{T})+\ln p(\Vtheta)\right)\\
+&   =\argmax{\Vtheta}\left(l(\Vtheta|\mathcal{T})+\ln  e^{-\frac{\|\Vtheta\|^2}{2\sigma^2}}\right)=\argmax{\Vtheta}\left(l(\Vtheta|\mathcal{T})-\frac{\|\Vtheta\|^2}{2\sigma^2}\right)
+\end{align*}
+which is equal to the penalty function introduced before, if 
+ $\gamma=\frac{1}{\sigma^{2}}$
+\end{block}
+\end{frame}
+
+\begin{frame}\frametitle{MAP estimate}
+\begin{example}
+Collection $\X$ of $n$ binary events, modeled as a Bernoulli distribution with unknown parameter $\phi$. Initial knowledge of $\phi$ is modeled as a Beta distribution:
+\[
+p(\phi|\alpha,\beta)=\mbox{Beta}(\phi|\alpha,\beta)=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\phi^{\alpha-1}(1-\phi)^{\beta-1}
+\]
+Log-likelihood
+\[
+l(\phi|\X)=\sum_{i=1}^{n}\left(x_{i}\ln\phi+(1-x_{i})\ln(1-\phi)\right)=n_{1}\ln\phi+n_{0}\ln(1-\phi)
+\]
+%dove $n_{0}$ ($n_{1}$) \`e il numero di $x\in\X$ pari a 0 (1)
+\[
+\frac{\partial }{\partial\phi}\big(l(\phi|\X)+\ln\mbox{Beta}(\phi|\alpha,\beta)\big)=\frac{n_{1}}{\phi}-\frac{n_{0}}{1-\phi}+\frac{\alpha-1}{\phi}-\frac{\beta-1}{1-\phi}=0\hspace{.5cm}\implies
+\]
+\[
+\phi^*_{MAP}=\frac{n_{1}+\alpha-1}{n+\alpha+\beta-2}
+\]
+\end{example}
+\end{frame}
+
+
+\begin{frame}{Note}
+\begin{block}{Gamma function}
+The function
+\[
+\Gamma(x)=\int_{0}^{\infty}t^{x-1}e^{-t}dt
+\]
+is an extension of the factorial to the real numbers field: in fact, for any integer $x$,
+\[
+\Gamma(x)=(x-1)!
+\]
+\end{block}
+\end{frame}
+
+%\begin{frame}{Bayesian estimation}
+%\begin{block}<1->{Idea}
+%The posterior distribution is derived
+%\[
+%p(\Vtheta|\X)=\frac{p(\X|\Vtheta)p(\Vtheta)}{p(\X)}=\frac{p(\X|\Vtheta)p(\Vtheta)}{\int_{\Vtheta} p(\X|\Vtheta)d\Vtheta}
+%\]
+%it is then possible, for example, to obtain mean $\me{\Vtheta|\X}$ and variance $\va{\Vtheta|\X}$
+%\end{block}
+%\begin{block}<1->{Prediction}
+%\[
+%p(x|\X)=\int_{\Vtheta}p(x|\Vtheta)p(\Vtheta|\X)d\Vtheta=\int_{\Vtheta}p(x|\Vtheta)\frac{p(\X|\Vtheta)p(\Vtheta)}{p(\X)}d\Vtheta
+%\]
+%\end{block}
+%\end{frame}
+
+\begin{frame}\frametitle{Applying bayesian inference}
+\begin{block}<1->{Mode and mean}
+Once the posterior distribution
+\[
+p(\Vtheta|\X)=\frac{p(\X|\Vtheta)p(\Vtheta)}{p(\X)}=\frac{p(\X|\Vtheta)p(\Vtheta)}{\int_{\Vtheta} p(\X|\Vtheta)d\Vtheta}
+\]
+is available, MAP estimate computes the most probable value (mode) $\Vtheta_{MAP}$ of the distribution. This may lead to inaccurate estimates, as in the figure below:
+\centerline{
+\includegraphics[scale=0.3,angle=0]{figs/Figure_2.pdf}
+}
+\end{block}
+\end{frame}
+
+\begin{frame}\frametitle{Applying bayesian inference}
+\begin{block}<1->{Mode and mean}
+A better estimation can be obtained by applying a fully bayesian approach and referring to the whole posterior distribution, for example by deriving the expectation of 
+$\Vtheta$ w.r.t. $p(\Vtheta|\X)$,
+\[
+\Vtheta^{*}=\med{p(\Vtheta|\X)}{\Vtheta}=\int_{\Vtheta}\Vtheta p(\Vtheta|\X)d\Vtheta
+\]
+\end{block}
+\end{frame}
+
+\begin{frame}\frametitle{Bayesian estimate}
+\begin{example}
+Collection $\X$ of $n$ binary events, modeled as a Bernoulli distribution with unknown parameter $\phi$. Initial knowledge of $\phi$ is modeled as a Beta distribution:
+\[
+p(\phi|\alpha,\beta)=\mbox{Beta}(\phi|\alpha,\beta)=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\phi^{\alpha-1}(1-\phi)^{\beta-1}
+\]
+Posterior distribution
+\begin{align*}
+p(\phi|\X,\alpha,\beta)&=\frac{\prod_{i=1}^{N}\phi^{x_{i}}(1-\phi)^{1-x_{i}}p(\phi|\alpha,\beta)}{p(\X)}=\frac{\phi^{N_{1}+\alpha-1}(1-\phi)^{N_{0}+\beta-1}}{Z}
+\end{align*}
+%since $\int_{-\infty}^{+\infty}p(\phi|\X,\alpha,\beta)d\phi=1$, $Z$ must be equal to the normalizing coefficient of the distribution $\mbox{Beta}(\phi|\alpha+N_{1},\beta+N_{0})$. 
+Hence,
+\[
+p(\phi|\X,\alpha,\beta)=\mbox{Beta}(\phi|\alpha+N_{1},\beta+N_{0})
+\]
+%\[
+%\me{p(\phi|\X,\alpha,\beta)}=\frac{n_{1}+\alpha}{n+\alpha+\beta}
+%\]
+\end{example}
+\end{frame}
+
+%%\begin{frame}\frametitle{Bayesian inference}
+%%\begin{block}<1->{Bayesian inference and mean square error}
+%%Fully bayesian inference makes it possible to minimize the expected mean square error 
+%%\begin{align*}
+%%{\cal C}(\Vtheta_{est})=\med{p(\Vtheta|\X)}{\frac{1}{2}\|\Vtheta-\Vtheta_{est}\|^{2}}=\int_{\Vtheta}\frac{1}{2}\|\Vtheta-\Vtheta_{est}\|^{2}p(\Vtheta|\X)d\Vtheta
+%%\end{align*}
+%%in the estimation of $\Vtheta$. 
+%%
+%%The minimum of this cost can be derived as follows
+%%\begin{align*}
+%%0&=\frac{\partial {\cal C}(\Vtheta_{est})}{\partial\Vtheta_{est}}=\int_{\Vtheta}(\Vtheta-\Vtheta_{est})p(\Vtheta|\X)d\Vtheta\\
+%%&=\int_{\Vtheta}\Vtheta p(\Vtheta|\X)d\Vtheta-\Vtheta_{est}\int_{\Vtheta}p(\Vtheta|\X)d\Vtheta=\Vtheta^{*}-\Vtheta_{est}
+%%\end{align*}
+%%thus, the minimum is obtained for $\Vtheta_{est}=\Vtheta^{*}$
+%%\end{block}
+%%\begin{block}<1->{Prediction}
+%%According to a pure bayesian approach, the prediction can be derived as follows
+%%\[
+%%p(x|\X)=\int_{\Vtheta}p(x|\Vtheta)p(\Vtheta|\X)d\Vtheta=\int_{\Vtheta}p(x|\Vtheta)\frac{p(\X|\Vtheta)p(\Vtheta)}{p(\X)}d\Vtheta
+%%\]
+%%\end{block}
+%%\end{frame}
+%
+%
+\section{Model selection}
+
+\begin{frame}\frametitle{Model selection}
+%\begin{block}<1->{Comparing different models}
+In the process described, a model (structure, hyper-parameter values) has been identified, in come way. How can we deal with this problem?
+
+\medskip
+This is performed through \alert{model selection}: identify, in a set of possible models, the one which we expect is best to represent the available data.
+
+\medskip
+Indeed, the one whose best (or a good) instantiation is best to represent the available data
+
+\medskip
+We need a way to compare models (not their instantiations), given the dataset
+\end{frame}
+%Instead of composing the predictions of all probabilistic models, select and apply the one which best suit wrt $\mathcal{T}$.
+%Let $m_{1}, \ldots,m_{r}$ be a set of probabilistic models, each with its own set of parameters. Given a dataset $\mathcal{T}$, we wish to \alert{select} the probabilistic model which may best represent $\mathcal{T}$.
+
+\begin{frame}\frametitle{Theoretical approach}
+Use the posterior probability of each model, given the dataset
+\[
+p(m|\mathcal{T})=\frac{p(\mathcal{T}|m)p(m)}{p(\mathcal{T})}%\propto p(\mathcal{T}|m)p(m)
+\]
+Observe that:
+\begin{itemize}
+\item If we assume that no specific knowledge on probabilistic models is initially available, then the prior distribution is uniform.
+\item The evidence $p(\mathcal{T})$ is a constant with respect to $m$
+\end{itemize}
+As a consequence, $p(m|\mathcal{T})\propto p(\mathcal{T}|m)$ and we may refer to the likelihood $ p(\mathcal{T}|m)$ in order to compare models
+%\end{block}
+\end{frame}
+
+\begin{frame}\frametitle{Model comparison}
+%\begin{block}<1->{Evidence}
+The distribution $p(\mathcal{T}|m)$ is also the evidence of the dataset w.r.t. model parameters%. It can be obtained by marginalization of model parameters
+\[
+p(\mathcal{T}|m)=\int_{\Vtheta}p(\mathcal{T}|\Vtheta,m)p(\Vtheta|m)d\Vtheta
+\]
+%\end{block}
+\end{frame}
+
+
+\begin{frame}{Model selection in practice}
+\begin{block}{Validation}
+\begin{description}
+  \item[Test set] Dataset is split into Training set (used for learning parameters) and Test set (used for measuring effectiveness). Good for large datasets: otherwise, small resulting training and test set (few data for fitting and validation)
+   \item[Cross validation] Dataset partitioned into $K$ equal-sized sets. Iteratively, in $K$ phases, use one set as test set and the union of the other $K-1$ ones as training set ($K$-fold cross validation). Average validation measures.
+   
+   		As a particular case, iteratively leave one element out and use all other points as training set (Leave-one-out cross validation).
+   		
+   		Time consuming for large datasets and for models which are costly to fit.
+\end{description}
+\end{block}
+\end{frame}
+
+\begin{frame}{Model selection in practice}
+\begin{block}{Information measures}
+Faster methods to compare model effectiveness, based on computing measures which take into account data fitting and model complexity.
+\begin{description}
+  \item[Akaike Information Criterion (AIC)] Let $\Vtheta$ be the set of parameters of the model and let $\Vtheta_{ML}$ be their maximum likelihood estimate on the dataset $\X$. Then, 
+  \[
+  AIC=2|\Vtheta|-2\log p(\X|\Vtheta_{ML})=2|\Vtheta|-2\max{\Vtheta} l(\Vtheta|\X)
+  \]
+  lower values correspond to models to be preferred. 
+   \item[Bayesian Information Criterion (BIC)] A variant of the above, defined as 
+\begin{align*}
+  BIC&=|\Vtheta|-\log |\X|2\log p(\X|\Vtheta_{ML})\\
+  &=|\Vtheta|\log |\X|-2\max{\Vtheta}l(\Vtheta|\X)
+\end{align*}
+\end{description}
+
+\end{block}
+\end{frame}
+
+
+
+\section{Example: learning in the dirichlet-multinomial model}
+
+\begin{frame}{Language modeling}
+A \alert{language model} is a (categorical) probability distribution on a vocabulary of terms (possibly, all words which occur in a large collection of documents). 
+
+\begin{block}{Use}
+A language model can be applied to predict the next term occurring in a text. The probability of occurrence of a term is related to its information content and is at the basis of a number of information retrieval techniques.
+\end{block}
+
+\begin{block}{Hypothesis}
+It is assumed that the probability of occurrence of a term is independent from the preceding terms in a text (\alert{bag of words} model).
+\end{block}
+
+\begin{block}{Generative model}
+Given a language model, it is possible to sample from the distribution to generate random documents statistically equivalent to the documents in the collection used to derive the model.
+\end{block}
+\end{frame}
+
+
+\begin{frame}{Language model}
+\begin{itemize}
+  \item Let $\mathcal{T}=\{t_1,\ldots,t_n\}$ be the set of terms occurring in a given collection $\mathcal{C}$ of documents, after \alert{stop word} (common, non informative terms) removal and \alert{stemming} (reduction of words to their basic form). 
+  \item For each $i=1,\ldots,n$ let $m_i$ be the multiplicity (number of occurrences) of term $t_i$ in $\mathcal{C}$
+  \item A language model can be derived as a categorical distribution associated to a vector $\hat{\Vphi}=(\hat{\phi}_1,\ldots,\hat{\phi}_n)^T$ of probabilities: that is, 
+\[
+0\leq\hat{\phi}_i\leq 1 \hspace{3mm}i=1,\ldots,n \hspace{2cm}\sum_{i=1}^n\hat{\phi}_i=1
+\]
+where $\hat{\phi}_j=p(t_j|\mathcal{C})$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Learning a language model by ML}
+Applying maximum likelihood to derive term probabilities in the language model  results into setting
+\[
+\hat{\phi}_j=p(t_j|\mathcal{C})=\frac{m_j}{\sum_{k=1}^nm_k}=\frac{m_j}{N}
+\]
+where $N=\sum_{i=1}^nm_i$ is the overall number of occurrences in $\mathcal{C}$ after stopword removal.
+\begin{block}{Smoothing}
+According to this estimate, a term $t$ which never occurred in $\mathcal{C}$ has 
+zero probability to be observed (black swan paradox).
+Due to overfitting the model to the observed data, typical of ML estimation.
+
+\medskip
+Solution: assign small, non zero, probability to events (terms) not observed up to now. This is called \alert{smoothing}. 
+\end{block}
+\end{frame}
+
+
+\begin{frame}{Bayesian learning of a language model}
+We may apply the dirichlet-multinomial model: 
+\begin{itemize}
+  \item this implies defining a
+Dirichlet prior $\mbox{Dir}(\Vphi|\Valpha)$, with 
+  $\Valpha=(\alpha_1, \alpha_2,\ldots, \alpha_n)$
+  that is,
+\[
+p(\phi_{1},\ldots,\phi_{n}|\Valpha)=\frac{1}{\Delta(\alpha_{1},\ldots,\alpha_{n})}\prod_{i=1}^{n}\phi_{i}^{\alpha_{i}-1}
+\]
+  \item  the posterior distribution of $\Vphi$ after $\mathcal{C}$ has been observed is then $\mbox{Dir}(\Vphi|\Valpha')$, where
+  \[
+  \Valpha'=(\alpha_1+m_1, \alpha_2+m_2,\ldots, \alpha_n+m_n)
+  \]
+  that is,
+\[
+p(\phi_{1},\ldots,\phi_{n}|\Valpha')=\frac{1}{\Delta(\alpha_{1}+m_1,\ldots,\alpha_{n}+m_n)}\prod_{i=1}^{n}\phi_{i}^{\alpha_{i}+m_i-1}
+\]  
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Bayesian learning of a language model}
+The language model $\hat{\Vphi}$ corresponds to the predictive posterior distribution 
+\begin{align*}
+\hat{\phi}_j=p(t_j|\mathcal{C},\Valpha)&=\int p(t_j|\Vphi)p(\Vphi|\mathcal{C},\Valpha)d\Vphi=\int \phi_j\mbox{Dir}(\Vphi|\Valpha')d\Vphi=\me{\phi_j}
+\end{align*}
+where $\me{\phi_j}$ is taken w.r.t. the distribution $\mbox{Dir}(\Vphi|\Valpha')$. Then, 
+\[
+\hat{\phi}_j=\frac{\alpha_j'}{\sum_{k=1}^n\alpha_k'}=\frac{\alpha_j+m_j}{\sum_{k=1}^n(\alpha_k+m_k)}=\frac{\alpha_j+m_j}{\alpha_0+N}
+\]
+The $\alpha_j$ term makes it impossible to obtain zero probabilities (\alert{Dirichlet smoothing}).
+
+\medskip
+Non informative prior: $\alpha_i=\alpha$ for all $i$, which results into 
+\[
+p(t_j|\mathcal{C},\Valpha)=\frac{m_j+\alpha}{\alpha V+N}
+\]
+where $V$ is the vocabulary size.
+\end{frame}
+
+\begin{frame}{Naive bayes classifiers}
+A language model can be applied to derive document classifiers into two or more classes.
+
+\begin{itemize}
+  \item given two classes $C_1, C_2$, assume that, for any document $d$, the probabilities $p(C_1|d)$ and $p(C_2|d)$ are known: then, $d$ can be assigned to the class with higher probability
+  \item how to derive $p(C_k|d)$ for any document, given a collection $\mathcal{C}_1$ of documents known to belong to $C_1$ and a similar collection $\mathcal{C}_2$ for $C_2$? 
+Apply Bayes' rule:
+\[
+p(C_k|d)\propto p(d|C_k)p(C_k)
+\]
+the evidence $p(d)$ is the same for both classes, and can be ignored.
+\item we have still the problem of computing $p(C_k)$ and $p(d|C_k)$ from $\mathcal{C}_1$ and $\mathcal{C}_2$
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Naive bayes classifiers}
+\begin{block}{Computing $p(C_k)$}
+The prior probabilities $p(C_k)$ ($k=1,2$) can be easily estimated from $\mathcal{C}_1, \mathcal{C}_2$: for example, by applying ML, we obtain 
+\[
+p(C_k)=\frac{|\mathcal{C}_1|}{|\mathcal{C}_1|+|\mathcal{C}_2|}
+\]
+  \end{block}
+  
+\begin{block}{Computing $p(d|C_k)$}
+For what concerns the likelihoods $p(d|C_k)$ ($k=1,2$), we observe that $d$ can be seen, according to the bag of words assumption, as a multiset of $n_d$ terms 
+\[
+d=\{\overline{t}_{1},\overline{t}_{2},\ldots, \overline{t}_{n_d}\}
+\]
+By applying the product rule, it results
+\begin{align*}
+p(d|C_k)&=p(\overline{t}_{1},\ldots, \overline{t}_{n_d}|C_k)=p(\overline{t}_{1}|C_k)p(\overline{t}_{2}|\overline{t}_1,C_k)\cdots p(\overline{t}_{n_d}|\overline{t}_{1},\ldots, \overline{t}_{n_d-1},C_k)
+\end{align*}
+  \end{block}
+\end{frame}
+
+
+\begin{frame}{Naive bayes classifiers}
+\begin{block}{The naive Bayes assumption}
+Computing $p(d|C_k)$ is much easier if we assume that terms are pairwise conditionally independent, given the class $C_k$, that is, for $i,j=1.\ldots, n_d$ and $k=1,2$,
+\[
+p(\overline{t}_{i},\overline{t}_{j}|C_k)=p(\overline{t}_{i}|C_k)p(\overline{t}_{2}|C_k)
+\]
+as, a consequence,
+\[
+p(d|C_k)=\prod_{j=1}^{n_d}p(\overline{t}_j|C_k)
+\]
+  \end{block}
+  
+\begin{block}{Language models and NB classifiers}
+The probabilities $p(\overline{t}_j|C_k)$ are available for all terms if language models have been derived for $C_1$ and $C_2$, respectively from documents in $\mathcal{C}_1$ and $\mathcal{C}_2$.
+\end{block}
+\end{frame}
+
+\begin{frame}{Feature selection by mutual information}
+\begin{block}{Feature selection}
+The set of probabilities in a language model can be exploited to identify the most relevant terms for classification, that is terms whose presence or absence in a document best characterizes the class of the document.
+\end{block}
+
+\begin{block}{Mutual information}
+To measure relevance, we can apply the set of mutual informations $\{I_1,\ldots, I_n\}$ %between the class distribution and the conditional class distribution given a term
+\begin{align*}
+I_j&=\sum_{k=1,2}p(t_j,C_k)\log\frac{p(t_j,C_k)}{p(t_j)p(C_k)}\\
+&=\sum_{k=1,2}p(C_k|t_j)p(t_j)\log\frac{p(C_k|t_j)}{p(C_k)}=p(t_j)KL(p(C_k|t_j)||p(C_k))
+\end{align*}
+here, $KL$ is a measure of the amount of information on class distributions provided by the presence of $t_j$. This amount is weighted by the probability of occurrence of $t_j$.
+\end{block}
+\end{frame}
+
+
+\begin{frame}{Feature selection by mutual information}
+\begin{block}{Mutual information}
+Since $p(t_j,C_k)=p(C_k|t_j)p(t_j)=p(t_j|C_k)p(C_k)$, 
+$I_j$ can be estimated as
+\begin{align*}
+I_j&=p(t_j|C_1)p(C_1)\log\frac{p(t_j|C_1)}{p(t_j)}+p(t_j|C_2)p(C_2)\log\frac{p(t_j|C_2)}{p(t_j)}\\
+&=\phi_{j1}\pi_1\log\frac{\phi_{j1}}{\phi_{j1}\pi_1+\phi_{j2}\pi_2}+\phi_{j2}\pi_2\log\frac{\phi_{j2}}{\phi_{j1}\pi_1+\phi_{j2}\pi_2}
+\end{align*}
+where $\phi_{jk}$ is the estimated probability of $t_j$ in documents of class $C_k$ and $\pi_k$ is the estimated probability of a document of class $C_k$ in the collection.
+\end{block}
+
+A selection of the most significant terms can be performed by selecting the set of terms with highest mutual information $I_j$.
+
+\end{frame}
+
+
+%\section{Bayesian model comparison}
+%
+%\begin{frame}\frametitle{Model averaging}
+%\begin{block}{Marginalization to reduce overfitting}
+%\begin{itemize}
+%\item To avoid overfitting, we may apply marginalization of model parameters: this corresponds to averaging among all possible models
+%\item Bayesian approach: use of probabilities to represent uncertainty in the choice of the model
+%\item Set of $L$ models ${\mathcal{M}_i}$, $i=1,\ldots, L$, each a probability distribution over the observed data $\mathcal{T}=(\X,\t)$ (conditional $p(\t|\X)$ or joint $p(\X,\t)$)
+%\item Prior uncertainty about the model represented through distribution $p(\mathcal{M}_i)$
+%\item Observing the training set modifies the uncertainty to the posterior
+%\[
+%p(\mathcal{M}_i|\mathcal{T})\propto p(\mathcal{T}|\mathcal{M}_i)p(\mathcal{M}_i)
+%\]
+%\item $p(\mathcal{T}|\mathcal{M}_i)$ is called \alert{marginal likelihood} or \alert{model evidence}
+%\item $\displaystyle\frac{p(\mathcal{T}|\mathcal{M}_i)}{p(\mathcal{T}|\mathcal{M}_j)}$ is the \alert{Bayes factor} for models $\mathcal{M}_i, \mathcal{M}_j$
+%\end{itemize}
+%\end{block}
+%\end{frame}
+%
+%\begin{frame}\frametitle{Model averaging}
+%\begin{block}{Prediction}
+%\begin{itemize}
+%\item Given the posterior among models, the predictive distribution can be obtained as a mixture distribution
+%\[
+%p(t|\x,\mathcal{T})=\sum_{i=1}^Lp(t|\x,\mathcal{M}_i,\mathcal{T})p(\mathcal{M}_i|\mathcal{T})
+%\]
+%this corresponds to a weighted average among predictions of single models, with weights given by their probabilities
+%\end{itemize}
+%
+%\end{block}
+%\end{frame}
+%
+%\begin{frame}\frametitle{Model evidence}
+%\begin{block}{As an average}
+%\begin{itemize}
+%\item The evidence of a model can be expressed as an average among instances for all possible parameter values
+%\[
+%p(\mathcal{T}|\mathcal{M}_i)=\int p(\mathcal{T}|\w, \mathcal{M}_i)p(\w|\mathcal{M}_i)d\w
+%\]
+%probability of generating $\mathcal{T}$ from a model with parameters derived by sampling distribution $p(\w|\mathcal{M}_i)$
+%\item normalization term in definition of posterior distribution of parameters
+%\[
+%p(\w|\mathcal{T},\mathcal{M}_i)=\frac{p(\mathcal{T}|\w,\mathcal{M}_i)p(\w|\mathcal{M}_i)}{p(\mathcal{T}|\mathcal{M}_i)}
+%\]
+%\end{itemize}
+%\end{block}
+%\end{frame}
+%
+%
+%\begin{frame}\frametitle{Model evidence}
+%\begin{block}{Insight}
+%\begin{itemize}
+%\item Assume a model $\mathcal{M}$ with one parameter $w$
+%\item Assume the posterior $p(w|\mathcal{T}, \mathcal{M})\propto p(\mathcal{T}|w, \mathcal{M})p(w|\mathcal{M})$ is sharply peaked around $w_{MAP}$, with width $\Delta w_{pos}$, hence 
+%\[
+%\int p(\mathcal{T}|w, \mathcal{M})p(\w|\mathcal{M})dw\simeq p(\mathcal{T}|w_{MAP}, \mathcal{M})p(w_{MAP}|\mathcal{M})\Delta w_{pos}
+%\]
+%\item Assume also a flat prior $p(w|\mathcal{M})$ with width $\Delta w_{pri}$ (and uniform probability $\displaystyle\frac{1}{\Delta w_{pri}}$) : then, 
+%\begin{align*}
+%p(\mathcal{T}|\mathcal{M})&=\int p(\mathcal{T}|w, \mathcal{M})p(w|\mathcal{M})dw\\
+%&\simeq p(\mathcal{T}|w_{MAP}, \mathcal{M})p(w_{MAP}|\mathcal{M})\Delta w_{pos}\simeq p(\mathcal{T}|w_{MAP},\mathcal{M})\frac{\Delta w_{pos}}{\Delta w_{pri}}
+%\end{align*}
+%\end{itemize}
+%\end{block}
+%\end{frame}
+%
+%\begin{frame}\frametitle{Model evidence}
+%
+%\centerline{
+%\includegraphics[scale=.7]{figs/Figure3-12.pdf}
+%}
+%\end{frame}
+%
+%\begin{frame}\frametitle{Model evidence}
+%Taking logs, 
+%\[
+%\log p(\mathcal{T}|\mathcal{M})\simeq \log p(\mathcal{T}|w_{MAP},\mathcal{M})+\log\frac{\Delta w_{pos}}{\Delta w_{pri}}
+%\]
+%\begin{itemize}
+%\item The first term is the fit of data to the most probable parameter values
+%\item The second term is negative ($\Delta w_{pos}<\Delta w_{pri}$) and it is a penalization related to the model complexity
+%\begin{itemize}
+%\item $\Delta w_{pos}$ very small: the parameter is finely tuned to data (even small differences in its value make the dataset unlikely). The second term is negative and large in module: the model is quite penalized
+%\item $\Delta w_{pos}$ large: the parameter is only roughly tuned to data (the dataset has the same fit also for different parameter values). The second term is still negative, but small in module: the model has a small penalization
+%\end{itemize}
+%\end{itemize}
+%\end{frame}
+%
+%\begin{frame}\frametitle{Model selection}
+%Model with a set of $M$ parameters, assuming all parameters have the same ratio $\displaystyle\frac{\Delta w_{pos}}{\Delta w_{pri}}$,
+%\[
+%\log p(\mathcal{T}|\mathcal{M})\simeq \log p(\mathcal{T}|\w_{MAP},\mathcal{M})+M\log\frac{\Delta w_{pos}}{\Delta w_{pri}}
+%\]
+%
+%\medskip
+%Model complexities
+%\begin{itemize}
+%\item $\mathcal{M}_1$, low complexity: few datasets fitted ($\mathcal{D}_0$ does not fit)
+%\item $\mathcal{M}_3$, high complexity: many datasets fitted, with low probability ($\mathcal{D}_0$ fits poorly)
+%\item $\mathcal{M}_2$, intermediate complexity: some datasets fitted ($\mathcal{D}_0$ fits better)
+%\end{itemize}
+% 
+%\centerline{
+%\includegraphics[scale=.7]{figs/Figure3-13.pdf}
+%}
+%\end{frame}
+%
+%
+%
+%\begin{frame}\frametitle{Model selection}
+%%\begin{block}<1->{Managing overfitting}
+%%Selecting the model type with highest dataset evidence 
+%%$p(\mathcal{T}|{\cal M}_{i})$ allows to deal with overfitting, since it favors models of intemediate complexity. 
+%%\end{block}
+%\begin{description}
+%\item[Too simple model.]
+%If ${\cal M}_{i}$ is very simple, it will justify a limited collection of datasets (low generality) and $p(\mathcal{D}|{\cal M}_{i})$ will assume significant values in a limited domain. Then, $p(\mathcal{D}_0|{\cal M}_{i})$ will most likely be small, and ${\cal M}_{i}$ will not be selected.
+%
+%\item[Too complex model.]
+%If ${\cal M}_{i}$ is very complex, it will justify a large collection of datasets (high generality) and $p(\mathcal{D}|{\cal M}_{i})$ will assume significant values in a large domain. As a consequence,  such values will be small, since
+%\[
+%\int_{\mathcal{D}}p(\mathcal{D}|{\cal M}_{i})d\mathcal{D}=1
+%\]
+%Then, it is likely that $p(\mathcal{D}|{\cal M}_{i})$ will be small, and  ${\cal M}_{i}$ will not be selected.
+%\end{description}
+%\end{frame}
+%
+%
+%
+
+
+
+\end{document}
