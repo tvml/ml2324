@@ -47,3 +47,23 @@ header: no
 . [`linregr_mc.`{:.codelink}]({{ site.baseurl }}{%link codici/linregr_mc.ipynb %}) Regressione lineare mediante inferenza MCMC in pymc3 (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/linregr_mc.ipynb)
 
 1. [`linear regression.`{:.codelink}]({{ site.baseurl }}{%link codici/linear_regression.ipynb %}) Metodi di regressione lineare(notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/linear_regression.ipynb)
+
+1. [`Class_regr.`{:.codelink}]({{ site.baseurl }}{%link codici/class_regr.ipynb %}) Classificazione binaria mediante regressione lineare (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/class_regr.ipynb)
+
+1. [`LDA.`{:.codelink}]({{ site.baseurl }}{%link codici/lda.ipynb %}) Classificazione mediante LDA (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/lda.ipynb)
+
+1. [`Perceptron.`{:.codelink}]({{ site.baseurl }}{%link codici/perceptron.ipynb %}) Perceptron (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/perceptron.ipynb)
+
+1. [`Implementazione processi gaussiani.`{:.codelink}]({{ site.baseurl }}{%link codici/gaussian_process.ipynb %}) Implementazione di processi gaussiani (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/gaussian_process.ipynb)
+
+1. [`Logistic regression.`{:.codelink}]({{ site.baseurl }}{%link codici/logreg.ipynb %}) Classificazione mediante logistic regression (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/logreg.ipynb)
+
+1. [`Logistic regression con regolarizzazione.`{:.codelink}]({{ site.baseurl }}{%link codici/logregregbf.ipynb %}) Classificazione mediante logistic regression con regolarizzazione (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/logregregbf.ipynb)
+
+1. [`Softmax.`{:.codelink}]({{ site.baseurl }}{%link codici/softmax.ipynb %}) Esempio di sotmax regression (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/softmax.ipynb)
+
+1. [`Local regression.`{:.codelink}]({{ site.baseurl }}{%link codici/local_regr.ipynb %}) Local regression mediante funzioni kernel (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/local_regr.ipynb)
+
+1. [`Gaussian process.`{:.codelink}]({{ site.baseurl }}{%link codici/gp.ipynb %}) Regressione mediante processi gaussiani (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/gp.ipynb)
+
+1. [`Gaussian process (more).`{:.codelink}]({{ site.baseurl }}{%link codici/gaussian_processes.ipynb %}) Ancora su regressione mediante processi gaussiani (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/gaussian_processes.ipynb)
