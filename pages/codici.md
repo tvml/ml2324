@@ -66,4 +66,4 @@ header: no
 
 1. [`Gaussian process.`{:.codelink}]({{ site.baseurl }}{%link codici/gp.ipynb %}) Regressione mediante processi gaussiani (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/gp.ipynb)
 
-1. [`Gaussian process (more).`{:.codelink}]({{ site.baseurl }}{%link codici/gaussian_processes.ipynb %}) Ancora su regressione mediante processi gaussiani (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/gaussian_processes.ipynb)
+
