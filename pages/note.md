@@ -18,3 +18,4 @@ header: no
 1. [`Probabilistic generative classification.`{:.filelink}]({{ site.baseurl }}{%link note/6-probclass-gen-notes.pdf %}) Classificazione probabilistica generativa
 1. [`Probabilistic discriminative classification.`{:.filelink}]({{ site.baseurl }}{%link note/7-probclass-discr-notes.pdf %}) Classificazione probabilistica discriminativa
 1. [`Nonparametric regression.`{:.filelink}]({{ site.baseurl }}{%link note/8-nonparam-regr-notes.pdf %}) Regressione non parametrica
+1. [`Nonparametric classification`{:.filelink}]({{ site.baseurl }}{%link note/9-nonparam-class-notes.pdf%}) Modelli non parametrici per la classificazione
