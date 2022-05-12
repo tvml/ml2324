@@ -54,8 +54,6 @@ header: no
 
 1. [`Perceptron.`{:.codelink}]({{ site.baseurl }}{%link codici/perceptron.ipynb %}) Perceptron (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/perceptron.ipynb)
 
-1. [`Implementazione processi gaussiani.`{:.codelink}]({{ site.baseurl }}{%link codici/gaussian_process.ipynb %}) Implementazione di processi gaussiani (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/gaussian_process.ipynb)
-
 1. [`Logistic regression.`{:.codelink}]({{ site.baseurl }}{%link codici/logreg.ipynb %}) Classificazione mediante logistic regression (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/logreg.ipynb)
 
 1. [`Logistic regression con regolarizzazione.`{:.codelink}]({{ site.baseurl }}{%link codici/logregregbf.ipynb %}) Classificazione mediante logistic regression con regolarizzazione (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/logregregbf.ipynb)
@@ -66,4 +64,14 @@ header: no
 
 1. [`Gaussian process.`{:.codelink}]({{ site.baseurl }}{%link codici/gp.ipynb %}) Regressione mediante processi gaussiani (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/gp.ipynb)
 
+1. [`Implementazione processi gaussiani.`{:.codelink}]({{ site.baseurl }}{%link codici/gaussian_process.ipynb %}) Implementazione di processi gaussiani (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/gaussian_process.ipynb)
 
+1. [`Parzen windows.`{:.codelink}]({{ site.baseurl }}{%link codici/parzen.ipynb %}) Applicazione delle Parzen windows alla classificazione (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/parzen.ipynb)
+
+1. [`Knn.`{:.codelink}]({{ site.baseurl }}{%link codici/knn.ipynb %}) Classificazione mediante k nearest neighbor (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/knn.ipynb)
+
+1. [`SVM custom kernel.`{:.codelink}]({{ site.baseurl }}{%link codici/svm_custom_kernel.ipynb %}) SVM con kernel custom (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/svm_custom_kernel.ipynb)
+
+1. [`Backprop.`{:.codelink}]({{ site.baseurl }}{%link codici/backprop.ipynb %}) Backpropagation in MLP a 3 layer (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/ensemble.ipynb)
+
+1. [`NN classifier.`{:.codelink}]({{ site.baseurl }}{%link codici/nn2d.ipynb %}) Rete neurale per classificazione binaria (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2122/blob/master/codici/nn2d.ipynb)

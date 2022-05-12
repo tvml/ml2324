@@ -19,3 +19,5 @@ header: no
 1. [`Probabilistic discriminative classification.`{:.filelink}]({{ site.baseurl }}{%link note/7-probclass-discr-notes.pdf %}) Classificazione probabilistica discriminativa
 1. [`Nonparametric regression.`{:.filelink}]({{ site.baseurl }}{%link note/8-nonparam-regr-notes.pdf %}) Regressione non parametrica
 1. [`Nonparametric classification`{:.filelink}]({{ site.baseurl }}{%link note/9-nonparam-class-notes.pdf%}) Modelli non parametrici per la classificazione
+1. [`SVM`{:.filelink}]({{ site.baseurl }}{%link note/10-svm-notes.pdf%}) Support vector machines
+1. [`Neural networks`{:.filelink}]({{ site.baseurl }}{%link note/11-neural-notes.pdf%}) Reti neurali
