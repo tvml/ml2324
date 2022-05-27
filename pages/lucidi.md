@@ -22,3 +22,6 @@ header: no
 1. [`Nonparametric classification`{:.filelink}]({{ site.baseurl }}{%link slides/9-nonparam-class-slides.pdf%}) Modelli non parametrici per la classificazione
 1. [`SVM`{:.filelink}]({{ site.baseurl }}{%link slides/10-svm-slides.pdf%}) Support vector machines
 1. [`Neural networks`{:.filelink}]({{ site.baseurl }}{%link slides/11-neural-slides.pdf%}) Reti neurali
+1. [`Decision trees`{:.filelink}]({{ site.baseurl }}{%link slides/12-dectrees-slides.pdf%}) Alberi di decisione
+1. [`Ensemble`{:.filelink}]({{ site.baseurl }}{%link slides/13-ensemble-slides.pdf%}) Ensemble di modelli
+1. [`Clustering`{:.filelink}]({{ site.baseurl }}{%link slides/14-clustering-slides.pdf%}) Introduzione al clustering
