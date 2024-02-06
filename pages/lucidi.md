@@ -7,6 +7,7 @@ permalink: /lucidi/
 header: no
 ---
 
+<!--
 1. [`Introduzione al ML.`{:.filelink}]({{ site.baseurl }}{%link slides/0-ml_teaser.pdf %}) Introduzione al machine learning
 1. [`Probability recall.`{:.filelink}]({{ site.baseurl }}{%link slides/A-probability_recall-slides.pdf %}) Richiami di probabilità
 1. [`Graphical models.`{:.filelink}]({{ site.baseurl }}{%link slides/B-graphical_models-slides.pdf %}) Introduzione ai modelli grafici
@@ -25,3 +26,4 @@ header: no
 1. [`Decision trees`{:.filelink}]({{ site.baseurl }}{%link slides/12-dectrees-slides.pdf%}) Alberi di decisione
 1. [`Ensemble`{:.filelink}]({{ site.baseurl }}{%link slides/13-ensemble-slides.pdf%}) Ensemble di modelli
 1. [`Clustering`{:.filelink}]({{ site.baseurl }}{%link slides/14-clustering-slides.pdf%}) Introduzione al clustering
+-->

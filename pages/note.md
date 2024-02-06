@@ -7,6 +7,7 @@ permalink: /note/
 header: no
 ---
 
+<!--
 1. [`Probability recall.`{:.filelink}]({{ site.baseurl }}{%link note/A-probability_recall-notes.pdf %}) Richiami di probabilità
 1. [`Graphical models.`{:.filelink}]({{ site.baseurl }}{%link note/B-graphical_models-notes.pdf %}) Introduzione ai modelli grafici
 1. [`Metodi montecarlo.`{:.filelink}]({{ site.baseurl }}{%link note/C-sampling-notes.pdf %}) Introduzione ai metodi montecarlo
@@ -24,3 +25,4 @@ header: no
 1. [`Decision trees`{:.filelink}]({{ site.baseurl }}{%link note/12-dectrees-notes.pdf%}) Alberi di decisione
 1. [`Ensemble`{:.filelink}]({{ site.baseurl }}{%link note/13-ensemble-notes.pdf%}) Ensemble di modelli
 1. [`Clustering`{:.filelink}]({{ site.baseurl }}{%link note/14-clustering-notes.pdf%}) Introduzione al clustering
+-->

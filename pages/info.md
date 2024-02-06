@@ -9,15 +9,15 @@ header: no
 
 ### Dove e quando
 
-Le lezioni del corso si svolgono presso la macroarea di Scienze, edificio Sogene:
+Le lezioni del corso si svolgono presso la macroarea di Scienze:
 
-* Martedì h. 12-13.45 aula 16
-* Giovedì h. 16-17.45 aula T7
-* Venerdì h. 14-15.45 aula T7
+* Martedì h. 11.30-12.45 aula 19 Sogene
+* Mercoledì h. 14-15.45 aula 19 Sogene
+* Venerdì h. 14-15.45 aula 5 PP2
 
-Le lezioni avranno inizio giovedì 10 Marzo 2022.
+Le lezioni avranno inizio martedì 5 Marzo 2024.
 
-Il team Teams associato al corso, all'interno del quale sarà possibile tra l'altro assistere alle lezioni da remoto, è accessibile a questo [indirizzo](https://teams.microsoft.com/l/team/19%3aSnXo8tfbIIOZjyAdDchfuhhMTIkKrWRWKjjGkLZ4l5Y1%40thread.tacv2/conversations?groupId=defe5dda-ef9f-45d4-bae2-22306222e6a1&tenantId=24c5be2a-d764-40c5-9975-82d08ae47d0e)
+Il team Teams associato al corso, all'interno del quale sarà possibile tra l'altro assistere alle lezioni da remoto, è accessibile a questo [indirizzo](https://teams.microsoft.com/l/team/19%3AnhDi76jmOCiEGoHPklPLzsC8I7wy1qMeuU3Ce52WG081%40thread.tacv2/conversations?groupId=02f40ad7-7678-420f-85b9-344b3f5ff4a9&tenantId=24c5be2a-d764-40c5-9975-82d08ae47d0e)
 
 
 #### Ricevimento
@@ -39,10 +39,11 @@ mediante la piattaforma Delphi.
 
 L'esame prevede la realizzazione di un progetto, assegnato circa un mese prima
 della conclusione del corso. Il progetto richiede l'applicazione di tecniche di
-Machine Learning a un problema specifico, definito su un dataset fornito dal
+Machine Learning a un problema specifico, concordato con il
 docente, la valutazione e la comparazione della loro efficacia e la scrittura di
-una relazione. A meno di eccezioni concordate con il docente, si richiede che il
-progetto sia realizzato per coppie di studenti.
+una relazione su quanto realizzato. A meno di eccezioni concordate con il docente, 
+si richiede che il
+progetto sia preparato per coppie di studenti.
 
 La prova di esame consiste nella illustrazione del lavoro svolto, facendo
 riferimento alla relazione scritta. E' inoltre previsto un colloquio orale, per
@@ -53,7 +54,6 @@ ogni singolo studente, incentrato sui contenuti del corso.
 Il progetto prevede la scrittura, utilizzando il linguaggio Python, di un
 programma che richiami e integri tra loro funzionalità di Machine Learning
 offerte da librerie software ampiamente utilizzate nel settore.
-
 
 ### Materiale didattico
 
