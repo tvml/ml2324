@@ -17,7 +17,7 @@ Le lezioni del corso si svolgono presso la macroarea di Scienze:
 
 Le lezioni avranno inizio martedì 5 Marzo 2024.
 
-Il team Teams associato al corso, all'interno del quale sarà possibile tra l'altro assistere alle lezioni da remoto, è accessibile a questo [indirizzo](https://teams.microsoft.com/l/team/19%3AnhDi76jmOCiEGoHPklPLzsC8I7wy1qMeuU3Ce52WG081%40thread.tacv2/conversations?groupId=02f40ad7-7678-420f-85b9-344b3f5ff4a9&tenantId=24c5be2a-d764-40c5-9975-82d08ae47d0e)
+Il team Teams associato al corso è accessibile a questo [indirizzo](https://teams.microsoft.com/l/team/19%3AnhDi76jmOCiEGoHPklPLzsC8I7wy1qMeuU3Ce52WG081%40thread.tacv2/conversations?groupId=02f40ad7-7678-420f-85b9-344b3f5ff4a9&tenantId=24c5be2a-d764-40c5-9975-82d08ae47d0e)
 
 
 #### Ricevimento
