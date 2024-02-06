@@ -5,7 +5,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/404.html</loc>
+	<loc>http://localhost:4000/ml2324/404.html</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -20,24 +20,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/blog/archive/</loc>
-	
-		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/ml2122/atom.xml</loc>
+	<loc>http://localhost:4000/ml2324/blog/archive/</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -54,7 +37,24 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/biblio/</loc>
+	<loc>http://localhost:4000/ml2324/atom.xml</loc>
+	
+		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+
+	
+	<url>
+	<loc>http://localhost:4000/ml2324/biblio/</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -69,7 +69,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/codici/</loc>
+	<loc>http://localhost:4000/ml2324/codici/</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -84,7 +84,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/comunicazioni/</loc>
+	<loc>http://localhost:4000/ml2324/comunicazioni/</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -99,7 +99,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/contact/</loc>
+	<loc>http://localhost:4000/ml2324/contact/</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -114,7 +114,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/dataset/</loc>
+	<loc>http://localhost:4000/ml2324/dataset/</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -129,7 +129,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/feed.xml</loc>
+	<loc>http://localhost:4000/ml2324/feed.xml</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -144,7 +144,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/humans.txt</loc>
+	<loc>http://localhost:4000/ml2324/humans.txt</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -159,7 +159,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/blog/</loc>
+	<loc>http://localhost:4000/ml2324/blog/</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -174,7 +174,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/</loc>
+	<loc>http://localhost:4000/ml2324/</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -189,7 +189,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/info/</loc>
+	<loc>http://localhost:4000/ml2324/info/</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -204,7 +204,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/lezioni/</loc>
+	<loc>http://localhost:4000/ml2324/lezioni/</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -219,7 +219,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/lucidi/</loc>
+	<loc>http://localhost:4000/ml2324/lucidi/</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -234,7 +234,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/note/</loc>
+	<loc>http://localhost:4000/ml2324/note/</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -249,7 +249,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/progetti/</loc>
+	<loc>http://localhost:4000/ml2324/progetti/</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -264,7 +264,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/programma/</loc>
+	<loc>http://localhost:4000/ml2324/programma/</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -279,7 +279,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/redirect-page/</loc>
+	<loc>http://localhost:4000/ml2324/redirect-page/</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -294,7 +294,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/robots.txt</loc>
+	<loc>http://localhost:4000/ml2324/robots.txt</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -313,7 +313,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/search/</loc>
+	<loc>http://localhost:4000/ml2324/search/</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -328,7 +328,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/sitemap.xml</loc>
+	<loc>http://localhost:4000/ml2324/sitemap.xml</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -343,7 +343,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/store/</loc>
+	<loc>http://localhost:4000/ml2324/store/</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -358,7 +358,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/style.css</loc>
+	<loc>http://localhost:4000/ml2324/style.css</loc>
 	
 		<lastmod>2022-03-11T16:10:48+01:00</lastmod>
 	
@@ -378,7 +378,7 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/ml2122/lezioni/lezione/</loc>
+	<loc>http://localhost:4000/ml2324/lezioni/lezione/</loc>
 	
 		<lastmod>2022-03-10T00:00:00+01:00</lastmod>
 	

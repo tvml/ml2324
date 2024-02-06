@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="/ml2122/assets/xslt/atom.xslt" ?>
-<?xml-stylesheet type="text/css" href="/ml2122/assets/css/atom.css" ?>
+<?xml-stylesheet type="text/xsl" href="/ml2324/assets/xslt/atom.xslt" ?>
+<?xml-stylesheet type="text/css" href="/ml2324/assets/css/atom.css" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<id>http://localhost:4000/ml2122/</id>
+	<id>http://localhost:4000/ml2324/</id>
 	<title>Machine learning</title>
 	<updated>2022-03-11T16:10:48+01:00</updated>
 
@@ -19,16 +19,16 @@
 		</author>
 	
 
-	<link href="http://localhost:4000/ml2122/atom.xml" rel="self" type="application/rss+xml" />
-	<link href="http://localhost:4000/ml2122/" rel="alternate" type="text/html" />
+	<link href="http://localhost:4000/ml2324/atom.xml" rel="self" type="application/rss+xml" />
+	<link href="http://localhost:4000/ml2324/" rel="alternate" type="text/html" />
 
 	<generator uri="http://jekyllrb.com" version="3.8.5">Jekyll</generator>
 
 	
 		<entry>
-			<id>http://localhost:4000/ml2122/lezioni/lezione/</id>
+			<id>http://localhost:4000/ml2324/lezioni/lezione/</id>
 			<title>Lezione 1</title>
-			<link href="http://localhost:4000/ml2122/lezioni/lezione/" rel="alternate" type="text/html" title="Lezione 1" />
+			<link href="http://localhost:4000/ml2324/lezioni/lezione/" rel="alternate" type="text/html" title="Lezione 1" />
 			<updated>2022-03-10T00:00:00+01:00</updated>
 
 			
@@ -44,7 +44,7 @@
 				</author>
 			
 			<summary></summary>
-			<content type="html" xml:base="http://localhost:4000/ml2122/lezioni/lezione/">&lt;p&gt;&lt;a href=&quot;https://uniroma2.sharepoint.com/:v:/s/GAMBOSI-8066132-MACHINE_LEARNING_1/EQNQMM8F-UxDtgUGi3IECssByNijYC8V1kokAccc3S2s2w?e=cESz3u&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
+			<content type="html" xml:base="http://localhost:4000/ml2324/lezioni/lezione/">&lt;p&gt;&lt;a href=&quot;https://uniroma2.sharepoint.com/:v:/s/GAMBOSI-8066132-MACHINE_LEARNING_1/EQNQMM8F-UxDtgUGi3IECssByNijYC8V1kokAccc3S2s2w?e=cESz3u&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
 </content>
 
 			
