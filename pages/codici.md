@@ -9,11 +9,11 @@ header: no
 
 
 
-<!--
+
 1. [`mnist`{:.codelink}]({{ site.baseurl }}{%link codici/mlp_mnist_tf.ipynb %}) Riconoscimento caratteri (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/master/codici/mlp_mnist_tf.ipynb)
 
 1. [`Titanic`{:.codelink}]({{ site.baseurl }}{%link codici/titanic.ipynb %}) Sopravvissuti Titanic (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/master/codici/titanic.ipynb)
-
+<!--
 1. [`Loss`{:.codelink}]({{ site.baseurl }}{%link codici/loss.ipynb %}) Funzione loss e GD (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/master/codici/loss.ipynb)
 
 1. [`Regression.`{:.codelink}]({{ site.baseurl }}{%link codici/regression.ipynb %}) Esempi di regressione mediante scikit-learn (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/master/codici/regression.ipynb)
