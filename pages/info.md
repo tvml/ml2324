@@ -11,7 +11,7 @@ header: no
 
 Le lezioni del corso si svolgono presso la macroarea di Scienze:
 
-* Martedì h. 11.30-12.45 aula 19 Sogene
+* Martedì h. 11.30-13.15 aula 19 Sogene
 * Mercoledì h. 14-15.45 aula 19 Sogene
 * Venerdì h. 14-15.45 aula 5 PP2
 
