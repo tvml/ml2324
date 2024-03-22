@@ -33,3 +33,5 @@ header: no
 1. [`linregr_gradient.`{:.codelink}]({{ site.baseurl }}{%link codici/linregr_gradient.ipynb %}) Regressione lineare con gradiente (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/master/codici/linregr_gradient.ipynb)
 
 1. [`linear regression.`{:.codelink}]({{ site.baseurl }}{%link codici/linear_regression.ipynb %}) Metodi di regressione lineare(notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/master/codici/linear_regression.ipynb)
+
+1. [`linear regression in pytorch.`{:.codelink}]({{ site.baseurl }}{%link codici/linear-regression_pytorch.ipynb %}) Esempio di linear regression in Pytorch (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/master/codici/linear-regression_pytorch.ipynb)
