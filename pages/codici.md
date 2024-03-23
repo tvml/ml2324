@@ -35,3 +35,5 @@ header: no
 1. [`linear regression.`{:.codelink}]({{ site.baseurl }}{%link codici/linear_regression.ipynb %}) Metodi di regressione lineare(notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/master/codici/linear_regression.ipynb)
 
 1. [`linear regression in pytorch.`{:.codelink}]({{ site.baseurl }}{%link codici/linear-regression_pytorch.ipynb %}) Esempio di linear regression in Pytorch (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/master/codici/linear-regression_pytorch.ipynb)
+
+1. [`Biasvar.`{:.codelink}]({{ site.baseurl }}{%link codici/biasvar.ipynb %}) Effetto coefficiente di regolarizzazione in Ridge regression (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/main/codici/biasvar.ipynb)
