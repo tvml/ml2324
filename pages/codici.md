@@ -37,3 +37,11 @@ header: no
 1. [`linear regression in pytorch.`{:.codelink}]({{ site.baseurl }}{%link codici/linear-regression_pytorch.ipynb %}) Esempio di linear regression in Pytorch (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/master/codici/linear-regression_pytorch.ipynb)
 
 1. [`Biasvar.`{:.codelink}]({{ site.baseurl }}{%link codici/biasvar.ipynb %}) Effetto coefficiente di regolarizzazione in Ridge regression (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/main/codici/biasvar.ipynb)
+
+1. [`equiv_kernel.`{:.codelink}]({{ site.baseurl }}{%link codici/equiv_kernel.ipynb %}) Calcolo e visualizzazione del kernel equivalente (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/master/codici/equiv_kernel.ipynb)
+
+1. [`Local regression.`{:.codelink}]({{ site.baseurl }}{%link codici/local_regr.ipynb %}) Local regression mediante funzioni kernel (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/master/codici/local_regr.ipynb)
+
+1. [`Gaussian process.`{:.codelink}]({{ site.baseurl }}{%link codici/gp.ipynb %}) Regressione mediante processi gaussiani (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/master/codici/gp.ipynb)
+
+1. [`Metodi di regressione.`{:.codelink}]({{ site.baseurl }}{%link codici/regression_methods.ipynb %}) Metodi di regressione(notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/master/codici/regression-methods.ipynb)
