@@ -18,3 +18,5 @@ header: no
 1. [`Linear regression.`{:.filelink}]({{ site.baseurl }}{%link note/4-linregr-notes.pdf %}) Regressione lineare
 
 1. [`Non parametric regression.`{:.filelink}]({{ site.baseurl }}{%link note/5-nonparam-regr-notes.pdf %}) Metodi non parametrici per la regressione
+
+1. [`Linear classification.`{:.filelink}]({{ site.baseurl }}{%link note/6-linclass-notes.pdf %}) Metodi per la classificazione lineare
