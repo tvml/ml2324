@@ -45,3 +45,35 @@ header: no
 1. [`Gaussian process.`{:.codelink}]({{ site.baseurl }}{%link codici/gp.ipynb %}) Regressione mediante processi gaussiani (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/master/codici/gp.ipynb)
 
 1. [`Metodi di regressione.`{:.codelink}]({{ site.baseurl }}{%link codici/regression_methods.ipynb %}) Metodi di regressione(notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/master/codici/regression-methods.ipynb)
+
+1. [`Class_regr.`{:.codelink}]({{ site.baseurl }}{%link codici/class_regr.ipynb %}) Classificazione binaria mediante regressione lineare (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/main/codici/class_regr.ipynb)
+
+1. [`GDA lineare.`{:.codelink}]({{ site.baseurl }}{%link codici/gda.ipynb %}) Classificazione mediante GDA con covarianza comune (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/main/codici/gda.ipynb)
+
+1. [`GDA.`{:.codelink}]({{ site.baseurl }}{%link codici/gdaquad.ipynb %}) Classificazione mediante GDA nel caso generale (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/main/codici/gdaquad.ipynb)
+
+1. [`LDA.`{:.codelink}]({{ site.baseurl }}{%link codici/lda.ipynb %}) Classificazione mediante LDA (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/main/codici/lda.ipynb)
+
+1. [`Perceptron.`{:.codelink}]({{ site.baseurl }}{%link codici/perceptron.ipynb %}) Perceptron (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/main/codici/perceptron.ipynb)
+
+1. [`Logistic regression.`{:.codelink}]({{ site.baseurl }}{%link codici/logreg.ipynb %}) Classificazione mediante logistic regression (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/main/codici/logreg.ipynb)
+
+1. [`Logistic regression con regolarizzazione.`{:.codelink}]({{ site.baseurl }}{%link codici/logregregbf.ipynb %}) Classificazione mediante logistic regression con regolarizzazione (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/main/codici/logregregbf.ipynb)
+
+1. [`Softmax.`{:.codelink}]({{ site.baseurl }}{%link codici/softmax.ipynb %}) Esempio di sotmax regression (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/main/codici/softmax.ipynb)
+
+1. [`Parzen windows.`{:.codelink}]({{ site.baseurl }}{%link codici/parzen.ipynb %}) Applicazione delle Parzen windows alla classificazione (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/main/codici/parzen.ipynb)
+
+1. [`Knn.`{:.codelink}]({{ site.baseurl }}{%link codici/knn.ipynb %}) Classificazione mediante k nearest neighbor (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/main/codici/knn.ipynb)
+
+1. [`Backprop.`{:.codelink}]({{ site.baseurl }}{%link codici/backprop.ipynb %}) Backpropagation in MLP a 3 layer (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/main/codici/ensemble.ipynb)
+
+1. [`NN classifier.`{:.codelink}]({{ site.baseurl }}{%link codici/nn2d.ipynb %}) Rete neurale per classificazione binaria (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2324/blob/main/codici/nn2d.ipynb)
+
+1. [`SVM custom kernel.`{:.codelink}]({{ site.baseurl }}{%link codici/svm_custom_kernel.ipynb %}) SVM con kernel custom (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2021/blob/main/codici/svm_custom_kernel.ipynb)
+
+1. [`Classificazione testo.`{:.codelink}]({{ site.baseurl }}{%link codici/TextClassification.ipynb %}) Classificazione multiclass di testi (notebook) [In colab](https://colab.research.google.com/github/tvml/ml2021/blob/main/codici/TextClassification.ipynb)
+
+
+
+
