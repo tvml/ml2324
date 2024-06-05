@@ -30,3 +30,15 @@ header: no
 1. [`Classificazione non parametrica`{:.filelink}]({{ site.baseurl }}{%link slides/9-nonparamclass-slides.pdf%}) Modelli non parametrici per la classificazione
 
 1. [`Neural`{:.filelink}]({{ site.baseurl }}{%link slides/10-mlp-slides.pdf%}) Introduzione alle reti neurali
+
+1. [`SVM`{:.filelink}]({{ site.baseurl }}{%link slides/11-svm-slides.pdf%}) Support vector machines
+
+1. [`Decision trees`{:.filelink}]({{ site.baseurl }}{%link slides/12-mlp-dectrees.pdf%}) Alberi di decisione
+
+1. [`Ensemble`{:.filelink}]({{ site.baseurl }}{%link slides/13-ensemble-slides.pdf%}) Metodi ensemble: bagging e boosting
+
+1. [`Clustering`{:.filelink}]({{ site.baseurl }}{%link slides/14-mlp-slides.pdf%}) Metodi di clustering
+
+1. [`Riduzione di dimensionalità`{:.filelink}]({{ site.baseurl }}{%link slides/15-dimred-slides.pdf%}) Riduzione di dimensionalità: PCA, FA
+
+1. [`Deep learning`{:.filelink}]({{ site.baseurl }}{%link slides/16-deep-slides.pdf%}) Introduzione al deep learning
