@@ -33,11 +33,11 @@ header: no
 
 1. [`SVM`{:.filelink}]({{ site.baseurl }}{%link slides/11-svm-slides.pdf%}) Support vector machines
 
-1. [`Decision trees`{:.filelink}]({{ site.baseurl }}{%link slides/12-mlp-dectrees.pdf%}) Alberi di decisione
+1. [`Decision trees`{:.filelink}]({{ site.baseurl }}{%link slides/12-dectrees-slides.pdf%}) Alberi di decisione
 
 1. [`Ensemble`{:.filelink}]({{ site.baseurl }}{%link slides/13-ensemble-slides.pdf%}) Metodi ensemble: bagging e boosting
 
-1. [`Clustering`{:.filelink}]({{ site.baseurl }}{%link slides/14-mlp-slides.pdf%}) Metodi di clustering
+1. [`Clustering`{:.filelink}]({{ site.baseurl }}{%link slides/14-clustering-slides.pdf%}) Metodi di clustering
 
 1. [`Riduzione di dimensionalità`{:.filelink}]({{ site.baseurl }}{%link slides/15-dimred-slides.pdf%}) Riduzione di dimensionalità: PCA, FA
 

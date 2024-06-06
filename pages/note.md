@@ -28,3 +28,11 @@ header: no
 1. [`Classificazione non parametrica`{:.filelink}]({{ site.baseurl }}{%link note/9-nonparamclass-notes.pdf%}) Modelli non parametrici per la classificazione
 
 1. [`Neural`{:.filelink}]({{ site.baseurl }}{%link note/10-mlp-notes.pdf%}) Introduzione alle reti neurali
+
+1. [`SVM`{:.filelink}]({{ site.baseurl }}{%link note/11-svm-notes.pdf%}) Support vector machines
+
+1. [`Decision trees`{:.filelink}]({{ site.baseurl }}{%link note/12-dectrees-notes.pdf%}) Alberi di decisione
+
+1. [`Ensemble`{:.filelink}]({{ site.baseurl }}{%link note/13-ensemble-notes.pdf%}) Metodi ensemble: bagging e boosting
+
+1. [`Clustering`{:.filelink}]({{ site.baseurl }}{%link note/14-clustering-notes.pdf%}) Metodi di clustering
