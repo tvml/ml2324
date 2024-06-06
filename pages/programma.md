@@ -6,7 +6,7 @@ teaser: ""
 permalink: /programma/
 header: no
 ---
-## Programma (tentativo)
+## Programma
 
 * Richiami di statistica bayesiana e apprendimento bayesiano <!--`10 ore`-->
 * Supervised learning <!--`30 ore`-->
